@@ -24,8 +24,8 @@ body {
  
 
 i {
-  font-size: 50px;
-  padding: 2rem;
+  font-size: 40px;
+  padding: 1.5rem;
 } 
 
 img {
@@ -40,15 +40,15 @@ img:hover {
 
 h2 {
     color: #000000;
-    font-size: 50px;
-    padding-bottom: 2rem;
+    font-size: 40px;
+    padding-bottom: 1rem;
     font-weight: 700;
     
   }
 
 h3 {
-    font-size: 30px;
-    padding: 2rem;
+    font-size: 25px;
+    padding: 1rem;
     margin: 1rem;
     font-weight: 700;
     font-style: italic;
@@ -66,7 +66,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    padding: 2rem;
+    padding: 1rem;
     margin: 3rem;
     box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
     border-radius: 2rem;
@@ -84,7 +84,7 @@ h3 {
 
 .navbar_title span {
     font-style: italic;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 900;
     color: #000000;
   }
@@ -94,7 +94,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
+    font-size: 45px;
     gap: 1rem;
     font-style: normal;
     font-weight: 700;
@@ -132,8 +132,8 @@ transition: transform .2s
     gap: 5rem;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    margin: 3rem;
+    width: 70%;
+    margin: 1rem;
     
   }
 
@@ -147,8 +147,8 @@ transition: transform .2s
     justify-content: center;
     flex-wrap: wrap;  
     line-height: 3rem;
-    padding: 2rem;
-    font-size: 35px;
+    padding: 1rem;
+    font-size: 25px;
     box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
     border-radius: 2rem;
   }
@@ -160,6 +160,7 @@ transition: transform .2s
   .description-img {
     box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
     border-radius: 30rem;
+    width: 30%;
   }
 
 
@@ -170,7 +171,7 @@ transition: transform .2s
 .section_tech {
     text-align: center;
     margin: 3rem;
-    padding: 2rem;
+    padding: 1rem;
     width: 80%;
     max-width: 80%;
     box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
@@ -191,7 +192,7 @@ transition: transform .2s
 
 .section_tech img {
     width: auto;
-    height: 100px;
+    height: 60px;
     max-width: 20%;
     padding: 1.5rem;
   }
@@ -205,7 +206,7 @@ transition: transform .2s
   .section_projet {
     display: flex;
     margin: 3rem ;
-    padding: 2rem;
+    padding: 1.5rem;
     flex-direction: column;
     align-items: center;
     
@@ -221,6 +222,7 @@ transition: transform .2s
 
 .section_projet h2 {
   text-align: center;
+  
   }
 
 .article_project {
@@ -232,11 +234,10 @@ transition: transform .2s
   }
 
 
-
 .article_img {
   margin: 0 auto;
-  width: 75%;
-  height: 25rem; 
+  width: 80%;
+  height: 20rem; 
   object-fit: cover;
   border-radius: 2rem;
   /* margin: 0 auto;
@@ -276,7 +277,7 @@ transition: transform .2s
   box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
   border-radius: 2rem;
   margin: 3rem ;
-  padding: 2rem;
+  padding: 1rem;
   }
 
 .music_container i {
@@ -308,18 +309,21 @@ transition: transform .2s
     display: flex;
     flex-wrap: wrap;
     margin: 3rem ;
-    justify-content: space-between;
     align-items: center;
     width: 80%;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
     border-radius: 2rem;
     
   }
 
+.footer_nav {
+  justify-content: space-between;
+}
+
 .footer_title {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
   }
 
 
