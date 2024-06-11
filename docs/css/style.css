@@ -1,0 +1,328 @@
+/* --- Generic styles --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    margin: 0 auto;
+    background-image: linear-gradient(to right bottom, #232425, #37393a, #4d4e4f, #646566, #7c7d7e, #7c7d7e, #7c7d7e, #7c7d7e, #646566, #4d4e4f, #37393a, #232425);
+    /* background-image: linear-gradient(to right bottom, #1431b9, #0745c1, #1057c6, #2568ca, #3b78cc, #3a77cc, #3a77cb, #3976cb, #2165c8, #0653c3, #003fbc, #0c29b3); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    /* animation: mymove 15s infinite; */
+  }
+ 
+.dark-mode {
+    /* background-image: linear-gradient(to right bottom, #9d9e9f, #848586, #6c6d6e, #555657, #3f4041, #3f4041, #3f4041, #3f4041, #555657, #6c6d6e, #848586, #9d9e9f); */
+    background-image: linear-gradient(to right bottom, #ffffff, #f3f4fb, #e4ebf7, #d2e2f2, #bedaec, #bedaec, #bedaec, #bedaec, #d2e2f2, #e4ebf7, #f3f4fb, #ffffff); 
+    color: black;
+}
+
+ 
+
+i {
+  font-size: 50px;
+  padding: 2rem;
+} 
+
+img {
+  transition: transform .2s
+  }
+    
+img:hover {
+  transform: scale(1.1);
+  box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+
+    }
+
+h2 {
+    color: #000000;
+    font-size: 50px;
+    padding-bottom: 2rem;
+    font-weight: 700;
+    
+  }
+
+h3 {
+    font-size: 30px;
+    padding: 2rem;
+    margin: 1rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+/* --- Navbar styles --- */
+
+
+.header_navbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 2rem;
+    margin: 3rem;
+    box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+    border-radius: 2rem;
+    
+  }
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+.navbar_title span {
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 900;
+    color: #000000;
+  }
+
+.navbar_title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    gap: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    
+  }
+
+.navbar_title i {
+    padding: 0rem;
+  }
+
+.nav_icon {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+.nav_icon i {
+transition: transform .2s
+
+  }
+
+    
+.nav_icon i:hover {
+    transform: scale(1.5);
+  }
+
+
+
+
+  /* --- Section description styles --- */
+  
+.contenair_section-description {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 3rem;
+    
+  }
+
+
+
+.description_section {
+    width: 40%;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;  
+    line-height: 3rem;
+    padding: 2rem;
+    font-size: 35px;
+    box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+    border-radius: 2rem;
+  }
+
+  .description_section i {
+    padding: 1rem;
+  }
+
+  .description-img {
+    box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+    border-radius: 30rem;
+  }
+
+
+
+
+/* --- Section technologies styles ---*/
+
+.section_tech {
+    text-align: center;
+    margin: 3rem;
+    padding: 2rem;
+    width: 80%;
+    max-width: 80%;
+    box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+    border-radius: 2rem;
+
+  }
+
+.tech_img-container{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .section_tech i{
+    padding: 1rem;
+  }
+
+.section_tech img {
+    width: auto;
+    height: 100px;
+    max-width: 20%;
+    padding: 1.5rem;
+  }
+  .section_tech img:hover{
+    box-shadow: none;
+  }
+
+
+/* --- Section projet styles --- */
+  
+  .section_projet {
+    display: flex;
+    margin: 3rem ;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 80%;
+    max-width: 80%;
+    box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+    border-radius: 2rem;
+  }
+
+  .section_projet i{
+    padding: 1rem;
+  }
+
+.section_projet h2 {
+  text-align: center;
+  }
+
+.article_project {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 45%;
+  object-fit: contain;
+  }
+
+
+
+.article_img {
+  margin: 0 auto;
+  width: 75%;
+  height: 25rem; 
+  object-fit: cover;
+  border-radius: 2rem;
+  /* margin: 0 auto;
+  width: 90%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 2rem;
+  padding: 1rem;    */
+  }
+
+.article_project p {
+  font-weight: 600;
+  text-align: center;
+  } 
+
+
+.article_article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  padding-bottom: 2rem;
+  } 
+
+
+
+/* --- Music container --- */
+
+.music_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 80%;
+  box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+  border-radius: 2rem;
+  margin: 3rem ;
+  padding: 2rem;
+  }
+
+.music_container i {
+  padding: 1rem;
+  }
+
+.music_links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  }
+
+.music_links i {
+  transition: transform .2s;
+  padding: 2rem;
+ 
+  }
+  
+      
+.music_links i:hover {
+  transform: scale(1.5);
+  }
+
+
+/* --- Footer styles --- */
+
+
+.footer_navbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem ;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 2rem;
+    box-shadow: rgb(255, 255, 255) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+    border-radius: 2rem;
+    
+  }
+
+.footer_title {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+
+
+
+
