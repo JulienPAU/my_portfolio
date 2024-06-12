@@ -15,18 +15,19 @@
     /* box-shadow: #00185e 0px 3px 25px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 2px; */
     border-radius: 2rem;
   }
-  
 
-  .tech_light {
+.tech_light {
     box-shadow: rgb(0, 0, 0) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
   }
   
-  .shadow_light {
+.shadow_light{
     
     box-shadow: rgb(0, 0, 0) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
     /* box-shadow: #00185e 0px 3px 25px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 2px; */
     border-radius: 2rem;
 }
+
+
 .footer_light {
     
     box-shadow: rgb(0, 0, 0) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;

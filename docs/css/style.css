@@ -26,7 +26,9 @@ body {
 i {
   font-size: 40px;
   padding: 1.5rem;
+  
 } 
+
 
 img {
   transition: transform .2s
