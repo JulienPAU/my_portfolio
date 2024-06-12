@@ -34,6 +34,13 @@ Voici quelques-unes des technologies que j'ai utilisées dans mes projets :
     - [oMontres](https://github.com/JulienPAU/Challenge-perso) 
 
 
-Merci de votre visite, et j'espère que vous apprécierez mon portfolio.
+# License
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+
+
+**Merci de votre visite, et j'espère que vous apprécierez mon portfolio.**
+
+
+
 
 
