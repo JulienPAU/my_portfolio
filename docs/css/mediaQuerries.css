@@ -143,7 +143,7 @@
 @media only screen and (max-width: 395px) {
   
   i {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .description_section h2{
@@ -160,10 +160,21 @@
 
   }
   
-  .music_container i {
+  .music_container h2  {
     padding: .5rem;
-    font-size: 15px;
+    font-size: 18px;
   }
+
+  .music_container-title i{
+    font-size: 20px;
+  }
+
+  
+
+  /* .music_container img {
+    width: 30%;
+
+  } */
 
 }
 
