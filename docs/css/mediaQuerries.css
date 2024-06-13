@@ -140,15 +140,29 @@
 
  
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 395px) {
+  
+  i {
+    font-size: 20px;
+  }
 
   .description_section h2{
   font-size: 25px;
 }
 
-.music_container h2{
-    font-size: 30px;
+.description_section i {
+  padding: .5rem;
+}
 
+
+.music_container h2{
+    font-size: 20px;
+
+  }
+  
+  .music_container i {
+    padding: .5rem;
+    font-size: 15px;
   }
 
 }
