@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 480px) {
    
   body{
@@ -65,8 +66,13 @@
   .description_section {
     width: 100%;
     font-size: 20px;
-    padding: 2rem;
+    padding: 1rem;
   }
+
+  .description_section h2 {
+    text-align: center;
+  }
+  
 
   .description-img {
     width: 80%;
@@ -111,6 +117,11 @@
     margin: 2rem;
   }
 
+  .music_container h2{
+    font-size: 25px;
+
+  }
+
   .music_links {
     justify-content: center;
   }
@@ -127,8 +138,22 @@
 
 } 
 
-  
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
+ 
+
+@media only screen and (max-width: 380px) {
+
+  .description_section h2{
+  font-size: 25px;
+}
+
+.music_container h2{
+    font-size: 30px;
+
+  }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 
 
     body{
@@ -250,6 +275,11 @@
     text-align: center;
     padding: 1rem;
     margin: 2rem;
+  }
+
+  .music_container h2 {
+    padding: 0rem;
+    font-size: 28px;
   }
 
   .music_links {
