@@ -9,6 +9,7 @@ darkMode.addEventListener("click", (event) => {
   const projectLight = document.querySelector(".section_projet");
    const musicLight = document.querySelector(".music_container")
   const footerLight = document.querySelector(".footer_navbar");
+  // const footerImgLight = document.querySelector(".footer_img")
   night.classList.toggle("dark-mode");
   headerLight.classList.toggle("shadow_light");
   descriptionLight.classList.toggle("description_light");
@@ -17,6 +18,7 @@ darkMode.addEventListener("click", (event) => {
   musicLight.classList.toggle("tech_light")
   projectLight.classList.toggle("section_light");
   footerLight.classList.toggle("footer_light");
+  // footerImgLight.classList.toggle("tech_light")
 
 });
 
