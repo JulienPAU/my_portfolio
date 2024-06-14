@@ -5,9 +5,15 @@
 
   .descrip_img-light {
     box-shadow: rgb(0, 0, 0) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
-    width: 30%;
+    max-width: 80%;
     border-radius: 30rem;
   }
+
+  .descrip_img-light:hover {
+    box-shadow: rgb(0, 0, 0) 0px 3px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+  }
+
+
 .section_light {
     padding: 2rem;
     max-width: 80%;
