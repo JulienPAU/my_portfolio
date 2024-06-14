@@ -5,9 +5,50 @@
     margin: 0 auto;
     height: auto;
   }
+  
+  
+
+
+    .slideInUp {
+      -webkit-animation-name: slideInUp;
+      animation-name: slideInUp;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      }
+      @-webkit-keyframes slideInUp {
+      0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
+      }
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      }
+      }
+      @keyframes slideInUp {
+      0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
+      }
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      }
+      } 
+
+
+    .bounce {
+        animation: bounce 3s infinite;
+        -webkit-animation: bounce 3s infinite;
+    }
+     
 
   h2 {
-    font-size: 30px;
+    font-size: 25px;
     padding: 0rem;
   }
 
@@ -134,6 +175,12 @@
   
     font-size: 20px;
   }
+
+  .footer_img {
+    
+    margin: 1.5rem;
+    
+  }
   
 
 } 
@@ -145,6 +192,37 @@
   i {
     font-size: 25px;
   }
+
+  .slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }
+    @keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    } 
 
   .description_section h2{
   font-size: 25px;
@@ -181,6 +259,37 @@
     margin: 0 auto;
     height: auto;
   }
+
+  .slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }
+    @keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    } 
 
   h2 {
     font-size: 35px;
@@ -244,7 +353,7 @@
   }
 
   .description_section {
-    width: 85%;
+    width: 80%;
     font-size: 20px;
     padding: 1rem;
   }
@@ -327,6 +436,68 @@
       margin: 0 auto;
       height: auto;
     }
+
+    .slideInDown {
+      -webkit-animation-name: slideInDown;
+      animation-name: slideInDown;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      }
+      @-webkit-keyframes slideInDown {
+      0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      visibility: visible;
+      }
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      }
+      }
+      @keyframes slideInDown {
+      0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      visibility: visible;
+      }
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      }
+      } 
+
+    .slideInUp {
+      -webkit-animation-name: slideInUp;
+      animation-name: slideInUp;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      }
+      @-webkit-keyframes slideInUp {
+      0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
+      }
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      }
+      }
+      @keyframes slideInUp {
+      0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
+      }
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      }
+      } 
   
     h2 {
       font-size: 40px;
@@ -388,7 +559,7 @@
     }
   
     .description_section {
-      width: 85%;
+      width: 80%;
       font-size: 25px;
       padding: 1.5rem;
     }
