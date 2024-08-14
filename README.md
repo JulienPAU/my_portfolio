@@ -15,6 +15,7 @@ Dans ce portfolio, vous trouverez une variété de projets, allant de simples si
 
 Voici quelques-unes des technologies que j'ai utilisées dans mes projets :
 
+- React
 - HTML
 - CSS
 - JavaScript
@@ -31,7 +32,7 @@ Voici quelques-unes des technologies que j'ai utilisées dans mes projets :
 
     - [Les petits  cadrans](https://github.com/JulienPAU/LPC) 
 
-    - [oMontres](https://github.com/JulienPAU/Challenge-perso) 
+    - [O'Recipes](https://github.com/JulienPAU/React-Orecipes) 
 
 
 # License

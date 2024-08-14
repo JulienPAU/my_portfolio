@@ -19,13 +19,22 @@
 src="https://kit.fontawesome.com/2018e2ad13.js"
 crossorigin="anonymous"
 ></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
+
+
 </head>
 <body class="body_container" id="dark_mode">
 <header class="header_navbar shadow">
     <nav class="navbar">
         <div class="navbar_name">
-             <h1 class="navbar_title">Julien PAULUS <span>Développeur Fullstack Javascript <i class="fa-brands fa-js" style="color: #000000;"></i></span></h1>
-             
+            <h1 class="navbar_title">
+                <div class="navbar_title" data-fr="Julien PAULUS" data-en="Julien PAULUS">Julien PAULUS</div>
+                <span>
+                    <span data-fr="Développeur Fullstack Javascript" data-en="Fullstack Javascript Developer">Développeur Fullstack Javascript</span>
+                    <i class="fa-brands fa-js" style="color: #000000;"></i>
+                </span>
+            </h1>             
             </div>
 
         <div class="nav_icon">
@@ -37,38 +46,32 @@ crossorigin="anonymous"
 
            <a href="pdf/CV_Julien_Paulus.pdf" target="_blank"><i class="fa-regular fa-file-pdf" style="color: #ffffff;"></i></a>
 
-           <i class="fa-solid fa-toggle-on" style="color: #ffffff;"></i>
-           
+           <i class="fa-solid fa-moon" id="darkModeIcon" style="color: #ffffff;"></i>
+           <i class="fa-solid fa-sun" id="lightModeIcon" style="color: #ffffff; display: none;"></i>
+
+           <span id="translateToEnglish" class="fi fi-gb" style="cursor: pointer;"></span>
+           <span id="translateToFrench" class="fi fi-fr" style="cursor: pointer; display: none;"></span>
         </div>
     </nav>
 </header>
 
 <section class="contenair_section-description">
-
-<img src="images/1665516061624.jpg" alt="ma_photo" class="description-img slideInLeft slideInDown">
-
-   
-
-
-        <div class="description_section slideInRight slideInUp">
-
-        <h2>À mon propos <i class="fa-regular fa-comment-dots" style="color: #000000;"></i></h2>
-
-        <p>
+    <img src="images/1665516061624.jpg" alt="ma_photo" class="description-img slideInLeft slideInDown">
+    <div class="description_section slideInRight slideInUp">
+        <h2 data-fr="À mon propos" data-en="About me">À mon propos <i class="fa-regular fa-comment-dots" style="color: #000000;"></i></h2>
+        <p data-fr="Développeur web en herbe passionné. Fort de mon parcours professionnel diversifié et de ma curiosité, mon objectif est de créer des expériences en ligne optimales et adaptées à vos besoins."
+           data-en="Passionate budding web developer. With my diverse professional background and curiosity, my goal is to create optimal online experiences tailored to your needs.">
             Développeur web en herbe passionné. Fort de mon parcours professionnel diversifié et de ma curiosité, 
             mon objectif est de créer des expériences en ligne optimales et adaptées à vos besoins.
-
-
         </p>
     </div>
-    
 </section>
 
 
     <section class="section_tech">
 
 
-        <h2>Technologies <i class="fa-solid fa-toolbox" style="color: #000000;"></i></h2>
+        <h2 data-fr="Technologies" data-en="Technologies">Technologies <i class="fa-solid fa-toolbox" style="color: #000000;"></i></h2>
 
         <div class="tech_img-container">
 
@@ -102,7 +105,7 @@ crossorigin="anonymous"
 
     <section class="section_projet">
 
-      <h2>Projets <i class="fa-solid fa-diagram-project" style="color: #000000;"></i></h2>
+        <h2 data-fr="Projets" data-en="Projects">Projets <i class="fa-solid fa-diagram-project" style="color: #000000;"></i></h2>
 
         <div class="article_article">
 
@@ -154,7 +157,7 @@ crossorigin="anonymous"
 
     <section class="music_container">
 
-        <h2 class="music_container-title">Musique d'ambiance<i class="fa-solid fa-music" style="color: #000000;"></i></h2>
+        <h2 class="music_container-title" data-fr="Musique d'ambiance" data-en="Background Music">Musique d'ambiance<i class="fa-solid fa-music" style="color: #000000;"></i></h2>
 
         <div class="music_links">
 
@@ -194,7 +197,7 @@ crossorigin="anonymous"
 
                 <a href= "mailto:julien.paulus@neuf.fr"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i> </a>
 
-                <a href="pdf/CV_Julien_Paulus.pdf" target="_blank"><i class="fa-regular fa-file-pdf fa-beat" style="color: #ffffff;"></i></a>
+                <a href="pdf/CV_Julien_Paulus.pdf" target="_blank"><i class="fa-regular fa-file-pdf " style="color: #ffffff;"></i></a>
                
             </div>
         </nav>
