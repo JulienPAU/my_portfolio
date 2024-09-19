@@ -58,12 +58,16 @@
 
   i {
     font-size: 25px;
-    padding: 1rem;
+    padding: 0.8rem;
   }
 
   .navbar {
    
     justify-content: center;
+  }
+
+  .fi-gb, .fi-fr {
+    font-size: 20px;
   }
 
 
