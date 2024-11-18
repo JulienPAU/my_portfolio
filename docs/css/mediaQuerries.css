@@ -1,51 +1,44 @@
-
 @media only screen and (max-width: 480px) {
-   
-  body{
+  body {
     margin: 0 auto;
     height: auto;
   }
-  
-  
 
-
-    .slideInUp {
-      -webkit-animation-name: slideInUp;
-      animation-name: slideInUp;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      }
-      @-webkit-keyframes slideInUp {
-      0% {
+  .slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInUp {
+    0% {
       -webkit-transform: translateY(100%);
       transform: translateY(100%);
       visibility: visible;
-      }
-      100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-      }
-      }
-      @keyframes slideInUp {
-      0% {
-      -webkit-transform: translateY(100%);
-      transform: translateY(100%);
-      visibility: visible;
-      }
-      100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-      }
-      } 
-
-
-    .bounce {
-        animation: bounce 3s infinite;
-        -webkit-animation: bounce 3s infinite;
     }
-     
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInUp {
+    0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+  .bounce {
+    animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+  }
 
   h2 {
     font-size: 25px;
@@ -62,14 +55,13 @@
   }
 
   .navbar {
-   
     justify-content: center;
   }
 
-  .fi-gb, .fi-fr {
+  .fi-gb,
+  .fi-fr {
     font-size: 20px;
   }
-
 
   .header_navbar {
     display: flex;
@@ -80,7 +72,6 @@
     padding: 1rem;
     margin: 3rem;
     border-radius: 2rem;
-    
   }
 
   .navbar_title {
@@ -88,7 +79,6 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    
   }
 
   .navbar_title span {
@@ -99,7 +89,6 @@
   }
   .nav_icon {
     align-items: center;
-    
   }
 
   .contenair_section-description {
@@ -117,7 +106,6 @@
   .description_section h2 {
     text-align: center;
   }
-  
 
   .description-img {
     width: 70%;
@@ -126,7 +114,6 @@
   .section_tech {
     width: 85%;
     margin: 2rem;
-    
   }
 
   .section_tech img {
@@ -162,9 +149,8 @@
     margin: 2rem;
   }
 
-  .music_container h2{
+  .music_container h2 {
     font-size: 25px;
-
   }
 
   .music_links {
@@ -176,23 +162,15 @@
   }
 
   .footer_title {
-  
     font-size: 20px;
   }
 
   .footer_img {
-    
     margin: 1.5rem;
-    
   }
-  
-
-} 
-
- 
+}
 
 @media only screen and (max-width: 395px) {
-  
   i {
     font-size: 25px;
   }
@@ -204,62 +182,54 @@
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    }
-    @-webkit-keyframes slideInUp {
-    0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    visibility: visible;
-    }
-    100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    }
-    }
-    @keyframes slideInUp {
-    0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    visibility: visible;
-    }
-    100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    }
-    } 
-
-  .description_section h2{
-  font-size: 25px;
-}
-
-.description_section i {
-  padding: .5rem;
-}
-
-
-.music_container h2{
-    font-size: 20px;
-
   }
-  
-  .music_container h2  {
-    padding: .5rem;
+  @-webkit-keyframes slideInUp {
+    0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInUp {
+    0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+  .description_section h2 {
+    font-size: 25px;
+  }
+
+  .description_section i {
+    padding: 0.5rem;
+  }
+
+  .music_container h2 {
+    font-size: 20px;
+  }
+
+  .music_container h2 {
+    padding: 0.5rem;
     font-size: 18px;
   }
 
-  .music_container-title i{
+  .music_container-title i {
     font-size: 20px;
   }
-
-  
-
- 
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-
-
-    body{
+  body {
     margin: 0 auto;
     height: auto;
   }
@@ -271,29 +241,29 @@
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    }
-    @-webkit-keyframes slideInUp {
+  }
+  @-webkit-keyframes slideInUp {
     0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    visibility: visible;
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
     }
     100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
     }
-    }
-    @keyframes slideInUp {
+  }
+  @keyframes slideInUp {
     0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    visibility: visible;
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
     }
     100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
     }
-    } 
+  }
 
   h2 {
     font-size: 35px;
@@ -315,9 +285,6 @@
     width: 90%;
   }
 
-  
-
-
   .header_navbar {
     display: flex;
     flex-wrap: wrap;
@@ -327,7 +294,6 @@
     padding: 1rem;
     margin: 3rem;
     border-radius: 2rem;
-    
   }
 
   .navbar_title {
@@ -336,7 +302,6 @@
     font-style: normal;
     font-weight: 700;
     padding: 1rem;
-    
   }
 
   .navbar_title span {
@@ -347,7 +312,6 @@
   }
   .nav_icon {
     align-items: center;
-    
   }
 
   .contenair_section-description {
@@ -370,7 +334,6 @@
     margin: 2rem;
     width: 100%;
     padding: 1rem;
-    
   }
 
   .section_tech img {
@@ -425,240 +388,217 @@
     padding: 1rem;
   }
 
-
   .footer_title {
-  
     font-size: 25px;
   }
-  
 }
 
-  
- 
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    body{
-      margin: 0 auto;
-      height: auto;
-    }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    margin: 0 auto;
+    height: auto;
+  }
 
-    .slideInLeft {
-      -webkit-animation-name: slideInLeft;
-      animation-name: slideInLeft;
-      -webkit-animation-duration: 2s;
-      animation-duration: 2s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      }
-      
-      @-webkit-keyframes slideInLeft {
-      0% {
+  .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes slideInLeft {
+    0% {
       -webkit-transform: translateX(-100%);
       transform: translateX(-100%);
       visibility: visible;
-      }
-      100% {
+    }
+    100% {
       -webkit-transform: translateX(0);
       transform: translateX(0);
-      }
-      }
-      @keyframes slideInLeft {
-      0% {
+    }
+  }
+  @keyframes slideInLeft {
+    0% {
       -webkit-transform: translateX(-100%);
       transform: translateX(-100%);
       visibility: visible;
-      }
-      100% {
+    }
+    100% {
       -webkit-transform: translateX(0);
       transform: translateX(0);
-      }
-      } 
+    }
+  }
 
-    .slideInUp {
-      -webkit-animation-name: slideInUp;
-      animation-name: slideInUp;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      }
-      @-webkit-keyframes slideInUp {
-      0% {
+  .slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInUp {
+    0% {
       -webkit-transform: translateY(100%);
       transform: translateY(100%);
       visibility: visible;
-      }
-      100% {
+    }
+    100% {
       -webkit-transform: translateY(0);
       transform: translateY(0);
-      }
-      }
-      @keyframes slideInUp {
-      0% {
+    }
+  }
+  @keyframes slideInUp {
+    0% {
       -webkit-transform: translateY(100%);
       transform: translateY(100%);
       visibility: visible;
-      }
-      100% {
+    }
+    100% {
       -webkit-transform: translateY(0);
       transform: translateY(0);
-      }
-      } 
-  
-    h2 {
-      font-size: 40px;
-      padding: 1rem;
     }
-  
-    h3 {
-      font-size: 25px;
-    }
-  
-    i {
-      font-size: 40px;
-      padding: 1rem;
-    }
-  
-    header .navbar {
-      margin: 0 auto;
-      justify-content: center;
-      width: 95%;
-    }
-  
-  
-    .header_navbar {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      justify-content: space-between;
-      width: 90%;
-      
-      margin: 3rem;
-      border-radius: 2rem;
-      
-    }
-  
-    .navbar_title {
-      text-align: center;
-      font-size: 45px;
-      font-style: normal;
-      font-weight: 700;
-      padding: 0.7rem;
-      
-    }
-  
-    .navbar_title span {
-      font-style: italic;
-      font-size: 30px;
-      font-weight: 900;
-      color: #000000;
-    }
-    .nav_icon {
-      align-items: center;
-      
-    }
-  
-    .contenair_section-description {
-      width: 100%;
-      gap: 4rem;
-      margin: 2rem;
-    }
-  
-    .description_section {
-      width: 80%;
-      font-size: 25px;
-      padding: 1.5rem;
-    }
-  
-    .description-img {
-      width: 40%;
-    }
-  
-    .section_tech {
-      margin: 2rem;
-      width: 100%;
-      padding: 1rem;
-      
-    }
-  
-    .section_tech img {
-      width: auto;
-      height: 60px;
-    }
-  
-    .tech_img-container {
-      margin: 0 auto;
-      width: 85%;
-      
-    }
-  
-    .section_projet {
-      margin: 2rem;
-      padding: 1rem;
-      width: 85%;
-    }
-    .article_article {
-      width: 100%;
-      gap: 1rem;
-    }
-  
-    .article_project {
-      width: 100%;
-    }
-  
-    .article_img {
-      width: 70%;
-      height: 20rem;
-      object-fit: cover;
-      
-    }
-  
-    .music_container {
-      width: 85%;
-      text-align: center;
-      padding: 1rem;
-      margin: 2rem;
-    }
-  
-    .music_links {
-      justify-content: center;
-    }
-  
-    .footer_navbar {
-      margin: 2rem;
-      padding: 1rem;
-    }
-  
-  
-    .footer_title {
-    
-      font-size: 25px;
-    }
-    
-
-    
-    
   }
-  
-  /* Pour les écrans de plus de 1024px */
-  @media only screen and (min-width: 1025px) and (max-width: 1500px) {
-    
-    .contenair_section-description {
-      width: 80%;
-    }
-    
-    .description_section {
-      width: 100%;
-    }
 
-    .description-img {
-      width: 40%;
-    }
-    .article_img {
-      width: 80%;
-      height: 15rem;
-    }
-
-    
-    
+  h2 {
+    font-size: 40px;
+    padding: 1rem;
   }
-  
+
+  h3 {
+    font-size: 25px;
+  }
+
+  i {
+    font-size: 40px;
+    padding: 1rem;
+  }
+
+  header .navbar {
+    margin: 0 auto;
+    justify-content: center;
+    width: 95%;
+  }
+
+  .header_navbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 90%;
+
+    margin: 3rem;
+    border-radius: 2rem;
+  }
+
+  .navbar_title {
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0.7rem;
+  }
+
+  .navbar_title span {
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 900;
+    color: #000000;
+  }
+  .nav_icon {
+    align-items: center;
+  }
+
+  .contenair_section-description {
+    width: 100%;
+    gap: 4rem;
+    margin: 2rem;
+  }
+
+  .description_section {
+    width: 80%;
+    font-size: 25px;
+    padding: 1.5rem;
+  }
+
+  .description-img {
+    width: 40%;
+  }
+
+  .section_tech {
+    margin: 2rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .section_tech img {
+    width: auto;
+    height: 60px;
+  }
+
+  .tech_img-container {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .section_projet {
+    margin: 2rem;
+    padding: 1rem;
+    width: 85%;
+  }
+  .article_article {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .article_project {
+    width: 100%;
+  }
+
+  .article_img {
+    width: 70%;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  .music_container {
+    width: 85%;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+  }
+
+  .music_links {
+    justify-content: center;
+  }
+
+  .footer_navbar {
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+  .footer_title {
+    font-size: 25px;
+  }
+}
+
+/* Pour les écrans de plus de 1024px */
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  .contenair_section-description {
+    width: 80%;
+  }
+
+  .description_section {
+    width: 100%;
+  }
+
+  .description-img {
+    width: 40%;
+  }
+  .article_img {
+    width: 80%;
+    height: 15rem;
+  }
+}

@@ -1,218 +1,471 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Paulus Julien</title>
 
     <link rel="icon" type="image/x-icon" href="images/logofav.png" />
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/keyframes.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediaQuerries.css">
-    <link rel="stylesheet" href="css/dark_light.css">
-    
-    
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaQuerries.css" />
+    <link rel="stylesheet" href="css/dark_light.css" />
 
     <script
-src="https://kit.fontawesome.com/2018e2ad13.js"
-crossorigin="anonymous"
-></script>
+      src="https://kit.fontawesome.com/2018e2ad13.js"
+      crossorigin="anonymous"
+    ></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
 
-
-</head>
-<body class="body_container" id="dark_mode">
-<header class="header_navbar shadow">
-    <nav class="navbar">
+    <!-- <style>
+      .cardBox {
+        float: left;
+        font-size: 1.2em;
+        margin: 1% 0 0 1%;
+        perspective: 800px;
+        transition: all 0.4s ease 0s;
+        width: 20%;
+      }
+      .cardBox:hover .card {
+        transform: rotateY(180deg);
+      }
+      .card {
+        background: #666666;
+        cursor: pointer;
+        height: 250px;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease 0s;
+        width: 100%;
+      }
+      .card p {
+        margin-bottom: 1.8em;
+      }
+      .card .front,
+      .card .back {
+        backface-visibility: hidden;
+        box-sizing: border-box;
+        color: white;
+        display: block;
+        font-size: 1.2em;
+        height: 100%;
+        padding: 0.8em 0.7em;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+      .card .front strong {
+        background: #fff;
+        border-radius: 100%;
+        color: #222;
+        font-size: 1.5em;
+        line-height: 30px;
+        padding: 0 7px 4px 6px;
+      }
+      .card .back {
+        transform: rotateY(180deg);
+      }
+      .card .back a {
+        padding: 0.3em 0.5em;
+        background: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 1px;
+        font-size: 0.9em;
+        transition: all 0.2s ease 0s;
+      }
+      .card .back a:hover {
+        background: #fff;
+        color: #333;
+        text-shadow: 0 0 1px #333;
+      }
+      .cardBox:nth-child(1) .card .back {
+        background: #ffcc00;
+      }
+      .cardBox:nth-child(2) .card .back {
+        background: #1c87c9;
+      }
+      .cardBox:nth-child(3) .card .back {
+        background: #ff6347;
+      }
+      .cardBox:nth-child(4) .card .back {
+        background: #8ebf42;
+      }
+      .cardBox:nth-child(2) .card {
+        -webkit-animation: giro 1.5s 1;
+        animation: giro 1.5s 1;
+      }
+      .cardBox:nth-child(3) .card {
+        -webkit-animation: giro 2s 1;
+        animation: giro 2s 1;
+      }
+      .cardBox:nth-child(4) .card {
+        -webkit-animation: giro 2.5s 1;
+        animation: giro 2.5s 1;
+      }
+      @-webkit-keyframes giro {
+        from {
+          transform: rotateY(180deg);
+        }
+        to {
+          transform: rotateY(0deg);
+        }
+      }
+      @keyframes giro {
+        from {
+          transform: rotateY(180deg);
+        }
+        to {
+          transform: rotateY(0deg);
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .cardBox {
+          margin-left: 2.8%;
+          margin-top: 3%;
+          width: 46%;
+        }
+        .card {
+          height: 285px;
+        }
+        .cardBox:last-child {
+          margin-bottom: 3%;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .cardBox {
+          width: 94.5%;
+        }
+        .card {
+          height: 260px;
+        }
+      }
+    </style> -->
+  </head>
+  <body class="body_container" id="dark_mode">
+    <header class="header_navbar shadow">
+      <nav class="navbar">
         <div class="navbar_name">
-            <h1 class="navbar_title">
-                <div class="navbar_title" data-fr="Julien PAULUS" data-en="Julien PAULUS">Julien PAULUS</div>
-                <span>
-                    <span data-fr="Développeur Fullstack Javascript" data-en="Fullstack Javascript Developer">Développeur Fullstack Javascript</span>
-                    <i class="fa-brands fa-js" style="color: #000000;"></i>
-                </span>
-            </h1>             
+          <h1 class="navbar_title">
+            <div
+              class="navbar_title"
+              data-fr="Julien PAULUS"
+              data-en="Julien PAULUS"
+            >
+              Julien PAULUS
             </div>
+            <span>
+              <span
+                data-fr="Développeur Fullstack Javascript"
+                data-en="Fullstack Javascript Developer"
+                >Développeur Fullstack Javascript</span
+              >
+              <i class="fa-brands fa-js" style="color: #000000"></i>
+            </span>
+          </h1>
+        </div>
 
         <div class="nav_icon">
-            <a href="https://github.com/JulienPAU" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+          <a href="https://github.com/JulienPAU" target="_blank"
+            ><i class="fa-brands fa-github" style="color: #ffffff"></i
+          ></a>
 
-           <a href="https://www.linkedin.com/in/paulus--julien/" target="_blank"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+          <a href="https://www.linkedin.com/in/paulus--julien/" target="_blank">
+            <i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+          ></a>
 
-           <a href="mailto:julien.paulus@neuf.fr"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i> </a>
+          <a href="mailto:julien.paulus@neuf.fr">
+            <i class="fa-solid fa-envelope" style="color: #ffffff"></i>
+          </a>
 
-           <a href="pdf/CV_Julien_Paulus.pdf" target="_blank"><i class="fa-regular fa-file-pdf" style="color: #ffffff;"></i></a>
+          <a href="pdf/CV-Julien_Paulus.pdf" target="_blank"
+            ><i class="fa-regular fa-file-pdf" style="color: #ffffff"></i
+          ></a>
 
-           <i class="fa-solid fa-moon" id="darkModeIcon" style="color: #ffffff;"></i>
-           <i class="fa-solid fa-sun" id="lightModeIcon" style="color: #ffffff; display: none;"></i>
+          <i
+            class="fa-solid fa-moon"
+            id="darkModeIcon"
+            style="color: #ffffff"
+          ></i>
+          <i
+            class="fa-solid fa-sun"
+            id="lightModeIcon"
+            style="color: #ffffff; display: none"
+          ></i>
 
-           <span id="translateToEnglish" class="fi fi-gb" style="cursor: pointer;"></span>
-           <span id="translateToFrench" class="fi fi-fr" style="cursor: pointer; display: none;"></span>
+          <span
+            id="translateToEnglish"
+            class="fi fi-gb"
+            style="cursor: pointer"
+          ></span>
+          <span
+            id="translateToFrench"
+            class="fi fi-fr"
+            style="cursor: pointer; display: none"
+          ></span>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<section class="contenair_section-description">
-    <img src="images/1665516061624.jpg" alt="ma_photo" class="description-img slideInLeft slideInDown">
-    <div class="description_section slideInRight slideInUp">
-        <h2 data-fr="À mon propos" data-en="About me">À mon propos <i class="fa-regular fa-comment-dots" style="color: #000000;"></i></h2>
-        <p data-fr="Développeur web en herbe passionné. Fort de mon parcours professionnel diversifié et de ma curiosité, mon objectif est de créer des expériences en ligne optimales et adaptées à vos besoins."
-           data-en="Passionate budding web developer. With my diverse professional background and curiosity, my goal is to create optimal online experiences tailored to your needs.">
-            Développeur web en herbe passionné. Fort de mon parcours professionnel diversifié et de ma curiosité, 
-            mon objectif est de créer des expériences en ligne optimales et adaptées à vos besoins.
+    <section class="contenair_section-description">
+      <img
+        src="images/photo.jpg"
+        alt="ma_photo"
+        class="description-img slideInLeft slideInDown"
+      />
+      <div class="description_section slideInRight slideInUp">
+        <h2 data-fr="À mon propos" data-en="About me">
+          À mon propos
+          <i class="fa-regular fa-comment-dots" style="color: #000000"></i>
+        </h2>
+        <p
+          data-fr="Développeur web en herbe passionné. Fort de mon parcours professionnel diversifié et de ma curiosité, mon objectif est de créer des expériences en ligne optimales et adaptées à vos besoins."
+          data-en="Passionate web developer, I see each project as a puzzle to solve. My approach? Breaking down complex problems and crafting tailor-made web solutions that get straight to the point."
+        >
+          Développeur web passionné par la tech, je vois chaque projet comme un
+          puzzle à résoudre. Mon truc ? Décortiquer les problèmes complexes et
+          imaginer des solutions web sur-mesure qui vont à l'essentiel.
         </p>
-    </div>
-</section>
-
-
-    <section class="section_tech">
-
-
-        <h2 data-fr="Technologies" data-en="Technologies">Technologies <i class="fa-solid fa-toolbox" style="color: #000000;"></i></h2>
-
-        <div class="tech_img-container">
-
-            <img class="bounce" src="images/JavaScript_logo.svg.png" alt="">
-            
-            <img class="bounce" src="images/node.png" alt="node_img">
-
-            <img class="bounce" src="images/express.png" alt="express_img">
-
-            <img class="bounce" src="images/postgresql.png" alt="PostgreSQL_img">
-
-            <img class="bounce" src="images/react.png" alt="react_img">
-
-            <img class="bounce" src="images/nextjs.png" alt="next_img">
-
-            <img class="bounce" src="images/svelte.png" alt="svelte_img">
-
-            <img class="bounce" src="images/tailwind.png" alt="tailwind_img">
-
-            <img class="bounce" src="images/HTML5_logo.png" alt="HTML5_img">
-
-            <img class="bounce" src="images/css-logo.png" alt="CSS_img">
-           
-        </div>
-
+      </div>
     </section>
 
+    <section class="section_tech">
+      <h2 data-fr="Technologies" data-en="Technologies" class="tech_title">
+        Technologies <i class="fa-solid fa-toolbox" style="color: #000000"></i>
+      </h2>
 
+      <div class="tech_img-container">
+        <img class="bounce" src="images/JavaScript_logo.svg.png" alt="" />
 
+        <img class="bounce logo_border" src="images/ts_logo.png" alt="" />
+
+        <img class="bounce" src="images/node.png" alt="node_img" />
+
+        <img class="bounce" src="images/express.png" alt="express_img" />
+
+        <img class="bounce" src="images/postgresql.png" alt="PostgreSQL_img" />
+
+        <img class="bounce" src="images/react.png" alt="react_img" />
+
+        <img
+          class="bounce logo_border"
+          src="images/nextjs.png"
+          alt="next_img"
+        />
+
+        <img class="bounce" src="images/svelte.png" alt="svelte_img" />
+
+        <img class="bounce" src="images/tailwind.png" alt="tailwind_img" />
+
+        <img class="bounce" src="images/HTML5_logo.png" alt="HTML5_img" />
+
+        <img class="bounce" src="images/css-logo.png" alt="CSS_img" />
+      </div>
+    </section>
 
     <section class="section_projet">
+      <h2 data-fr="Projets" data-en="Projects">
+        Projets
+        <i class="fa-solid fa-diagram-project" style="color: #000000"></i>
+      </h2>
 
-        <h2 data-fr="Projets" data-en="Projects">Projets <i class="fa-solid fa-diagram-project" style="color: #000000;"></i></h2>
-
-        <div class="article_article">
-
-            <article class="article_project">
-                <h3>O'Coffee</h3>
-                <a href="https://github.com/JulienPAU/Projet_formation_oCoffee" target="_blank"><img class="article_img" src="images/oCoffee.png" alt="image_ocoffee">  </a>        
-                 <!-- <p> Découverte besoin du client </p>
+      <div class="article_article">
+        <article class="article_project">
+          <h3>O'Coffee</h3>
+          <a
+            href="https://github.com/JulienPAU/Projet_formation_oCoffee"
+            target="_blank"
+            ><img
+              class="article_img"
+              src="images/oCoffee.png"
+              alt="image_ocoffee"
+            />
+          </a>
+          <!-- <p> Découverte besoin du client </p>
                  <p> Mise en place d'une intégration avec HTML et CSS</p>
                  <p> EJS pour le rendu des vues et la génération de pages dynamiques</p>
                  <p> Ajout de fonctionnalités avec Javascript</p>
                  <p> Node.js avec Express pour gérer les requêtes et les réponses</p>
                  <p> PostgreSQL pour stocker et gérer les données</p> -->
-            </article>
+        </article>
 
-            <article class="article_project">
-                <h3>O'Recipes</h3>
-                <a href="https://github.com/JulienPAU/React-Orecipes" target="_blank"><img class="article_img" src="images/orecipes.PNG" alt="image_recettes">  </a>        
-              
-            </article>
+        <article class="article_project">
+          <h3>O'Recipes</h3>
+          <a href="https://github.com/JulienPAU/React-Orecipes" target="_blank"
+            ><img
+              class="article_img"
+              src="images/orecipes.PNG"
+              alt="image_recettes"
+            />
+          </a>
+        </article>
 
+        <article class="article_project">
+          <h3>Paw Connect</h3>
 
-            <article class="article_project">
-                <h3>Paw Connect</h3>
-                
-                <a href="https://paw-connect-front-sigma.vercel.app/" target="_blank"><img class="article_img" src="images/pawconnect.PNG" alt="image_ocoffee"></a>
-                 <!-- <p> Mise en place d'une intégration avec HTML et CSS</p>
+          <a href="https://paw-connect-front-sigma.vercel.app/" target="_blank"
+            ><img
+              class="article_img"
+              src="images/pawconnect.PNG"
+              alt="image_ocoffee"
+          /></a>
+          <!-- <p> Mise en place d'une intégration avec HTML et CSS</p>
                  <p> EJS pour le rendu des vues et la génération de pages dynamiques</p> -->
-                 <!-- <p>- Ajout de fonctionnalités avec Javascript</p> -->
-                 <!-- <p> Node.js avec Express pour gérer les requêtes et les réponses</p> -->
-                 <!-- <p>- PostgreSQL pour stocker et gérer les données</p> -->
-                  <!-- <p class="login" data-fr="(Login sur demande)" data-en="(Login on request)">(Login sur demande)</p> -->
-            </article>
+          <!-- <p>- Ajout de fonctionnalités avec Javascript</p> -->
+          <!-- <p> Node.js avec Express pour gérer les requêtes et les réponses</p> -->
+          <!-- <p>- PostgreSQL pour stocker et gérer les données</p> -->
+          <!-- <p class="login" data-fr="(Login sur demande)" data-en="(Login on request)">(Login sur demande)</p> -->
+        </article>
 
-
-
-
-
-
-            <article class="article_project">
-                <h3>Portfolio</h3>
-                <a href="https://github.com/JulienPAU/my_portfolio" target="_blank"><img class="article_img" src="images/portfolio.png" alt="image_paw-connect"></a>
-                <!-- <p> Mise en place d'une intégration avec HTML et CSS</p> -->
-                <!-- <p>- EJS pour le rendu des vues et la génération de pages dynamiques</p> -->
-                <!-- <p> Ajout de fonctionnalités avec Javascript</p> -->
-                <!-- <p>- Node.js avec Express pour gérer les requêtes et les réponses</p> -->
-                <!-- <p>- PostgreSQL pour stocker et gérer les données</p> -->
-            </article>
-
-
-           
-            
-
+        <article class="article_project">
+          <h3>Portfolio</h3>
+          <a href="https://github.com/JulienPAU/my_portfolio" target="_blank"
+            ><img
+              class="article_img"
+              src="images/portfolio.png"
+              alt="image_paw-connect"
+          /></a>
+          <!-- <p> Mise en place d'une intégration avec HTML et CSS</p> -->
+          <!-- <p>- EJS pour le rendu des vues et la génération de pages dynamiques</p> -->
+          <!-- <p> Ajout de fonctionnalités avec Javascript</p> -->
+          <!-- <p>- Node.js avec Express pour gérer les requêtes et les réponses</p> -->
+          <!-- <p>- PostgreSQL pour stocker et gérer les données</p> -->
+        </article>
       </div>
-
     </section>
-
 
     <section class="music_container">
+      <h2
+        class="music_container-title"
+        data-fr="Musique d'ambiance"
+        data-en="Background Music"
+      >
+        Musique d'ambiance<i
+          class="fa-solid fa-music"
+          style="color: #000000"
+        ></i>
+      </h2>
 
-        <h2 class="music_container-title" data-fr="Musique d'ambiance" data-en="Background Music">Musique d'ambiance<i class="fa-solid fa-music" style="color: #000000;"></i></h2>
+      <div class="music_links">
+        <a href="https://www.deezer.com/en/playlist/6399367984" target="_blank"
+          ><i class="fa-brands fa-deezer" style="color: #ffffff"></i
+        ></a>
 
-        <div class="music_links">
+        <a href="https://www.deezer.com/fr/playlist/7065988424" target="_blank"
+          ><i class="fa-brands fa-deezer" style="color: #ffffff"></i
+        ></a>
 
-            <a href="https://www.deezer.com/en/playlist/6399367984" target="_blank"><i class="fa-brands fa-deezer" style="color: #ffffff;"></i></a>
+        <a href="https://open.spotify.com/user/chilledcow" target="_blank"
+          ><i class="fa-brands fa-spotify" style="color: #ffffff"></i
+        ></a>
 
-            <a href="https://www.deezer.com/fr/playlist/7065988424" target="_blank"><i class="fa-brands fa-deezer" style="color: #ffffff;"></i></a>
+        <a
+          href="https://open.spotify.com/intl-fr/track/2VbPrfnaQ7idKYZEqEtFrC"
+          target="_blank"
+          ><i class="fa-brands fa-spotify" style="color: #ffffff"></i
+        ></a>
 
-            <a href="https://open.spotify.com/user/chilledcow" target="_blank"><i class="fa-brands fa-spotify" style="color: #ffffff;"></i></a>
+        <a
+          href="https://www.youtube.com/watch?v=g6LhK0wTemE&ab_channel=LofiGirl"
+          target="_blank"
+          ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
+        ></a>
 
-            <a href="https://open.spotify.com/intl-fr/track/2VbPrfnaQ7idKYZEqEtFrC" target="_blank"><i class="fa-brands fa-spotify" style="color: #ffffff;"></i></a>
-
-            <a href="https://www.youtube.com/watch?v=g6LhK0wTemE&ab_channel=LofiGirl" target="_blank"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
-
-            <a href="https://www.youtube.com/watch?v=dusfmL_bm1o&ab_channel=LO-FISENPAI" target="_blank"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
-        
-         
-        </div>
-
+        <a
+          href="https://www.youtube.com/watch?v=dusfmL_bm1o&ab_channel=LO-FISENPAI"
+          target="_blank"
+          ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
+        ></a>
+      </div>
     </section>
 
-
-
     <footer class="footer_navbar">
-        <nav class="navbar footer_nav">
-            <div class="footer_name">
-                 <h1 class="footer_title">&copy; Julien Paulus 2024</h1>
-                 
-            </div>
-            
-            <img class="footer_img" src="images/logofav.png" alt="">
+      <nav class="navbar footer_nav">
+        <div class="footer_name">
+          <h1 class="footer_title">&copy; Julien Paulus 2024</h1>
+        </div>
 
-    
-            <div class="nav_icon">
-                <a href="https://github.com/JulienPAU" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+        <img class="footer_img" src="images/logofav.png" alt="" />
 
-                <a href="https://www.linkedin.com/in/paulus--julien/" target="_blank"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+        <div class="nav_icon">
+          <a href="https://github.com/JulienPAU" target="_blank"
+            ><i class="fa-brands fa-github" style="color: #ffffff"></i
+          ></a>
 
-                <a href= "mailto:julien.paulus@neuf.fr"> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i> </a>
+          <a href="https://www.linkedin.com/in/paulus--julien/" target="_blank">
+            <i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+          ></a>
 
-                <a href="pdf/CV_Julien_Paulus.pdf" target="_blank"><i class="fa-regular fa-file-pdf " style="color: #ffffff;"></i></a>
-               
-            </div>
-        </nav>
+          <a href="mailto:julien.paulus@neuf.fr">
+            <i class="fa-solid fa-envelope" style="color: #ffffff"></i>
+          </a>
+
+          <a href="pdf/CV_Julien_Paulus.pdf" target="_blank"
+            ><i class="fa-regular fa-file-pdf" style="color: #ffffff"></i
+          ></a>
+        </div>
+      </nav>
     </footer>
 
-
-    
+    <!-- <section>
+      <h2>Cartes de retournement sensibles</h2>
+      <div class="boxesContainer">
+        <div class="cardBox">
+          <div class="card">
+            <div class="front">
+              <h3>Première Carte</h3>
+              <p>Placez la souris sur elle pour retourner</p>
+            </div>
+            <div class="back">
+              <h3>Première face arrière</h3>
+              <p>Contenu dans la première carte</p>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="card">
+            <div class="front">
+              <h3>Deuxième carte</h3>
+              <p>Placez la souris sur elle pour retourner</p>
+            </div>
+            <div class="back">
+              <h3>Deuxième face arrière</h3>
+              <p>Contenu dans la deuxième carte</p>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="card">
+            <div class="front">
+              <h3>Troisième carte</h3>
+              <p>Placez la souris sur elle pour retourner</p>
+            </div>
+            <div class="back">
+              <h3>Troisième face arrière</h3>
+              <p>Contenu dans la troisième carte</p>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="card">
+            <div class="front">
+              <h3>Quatrième carte</h3>
+              <p>Placez la souris sur elle pour retourner</p>
+            </div>
+            <div class="back">
+              <h3>Quatrième face arrière</h3>
+              <p>Contenu dans la quatrième carte</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
