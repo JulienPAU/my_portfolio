@@ -217,8 +217,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Ajouter des événements tactiles pour améliorer l'expérience de défilement
+  // Améliorer le défilement des carousels
   for (const carousel of carousels) {
+    // Événements tactiles pour un défilement plus fluide
     let startX;
     let scrollLeft;
 
@@ -236,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
       (e) => {
         if (!startX) return;
         const x = e.touches[0].pageX - carousel.offsetLeft;
-        const walk = (x - startX) * 2; // Vitesse de défilement
+        const walk = (x - startX) * 1.5; // Vitesse de défilement
         carousel.scrollLeft = scrollLeft - walk;
       },
       { passive: true }
@@ -249,6 +250,34 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       { passive: true }
     );
+
+    // Ajouter le support pour la souris (drag)
+    let isDown = false;
+
+    carousel.addEventListener("mousedown", (e) => {
+      isDown = true;
+      carousel.classList.add("grabbing");
+      startX = e.pageX - carousel.offsetLeft;
+      scrollLeft = carousel.scrollLeft;
+    });
+
+    carousel.addEventListener("mouseleave", () => {
+      isDown = false;
+      carousel.classList.remove("grabbing");
+    });
+
+    carousel.addEventListener("mouseup", () => {
+      isDown = false;
+      carousel.classList.remove("grabbing");
+    });
+
+    carousel.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - carousel.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      carousel.scrollLeft = scrollLeft - walk;
+    });
   }
 
   // Appeler la fonction au chargement et au redimensionnement

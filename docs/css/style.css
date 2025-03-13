@@ -266,6 +266,7 @@ button {
 .logo p {
   font-size: var(--font-size-base);
   color: var(--text-muted);
+  text-align: left;
 }
 
 .nav-links {
@@ -836,12 +837,18 @@ select:focus,
   .mobile-carousel {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: none;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     margin: 0 -1.5rem;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 1rem;
     gap: var(--spacing-md);
+    cursor: grab;
+  }
+
+  .mobile-carousel.grabbing {
+    cursor: grabbing;
+    user-select: none;
   }
 
   .mobile-carousel::-webkit-scrollbar {
@@ -851,21 +858,18 @@ select:focus,
   /* Carousel des compétences */
   .skills-carousel .skill-card {
     flex: 0 0 150px;
-    scroll-snap-align: center;
     margin-bottom: var(--spacing-md);
   }
 
   /* Carousel des projets */
   .projects-carousel .project-card {
     flex: 0 0 280px;
-    scroll-snap-align: center;
     height: 380px;
   }
 
   /* Carousel des contacts */
   .contact-carousel .contact-link {
     flex: 0 0 250px;
-    scroll-snap-align: center;
     margin-bottom: var(--spacing-md);
   }
 
@@ -899,6 +903,24 @@ select:focus,
       opacity: 0.4;
       width: 30px;
     }
+  }
+
+  /* Ajustements pour les cartes de projet en mobile */
+  .project-card-back {
+    overflow-y: auto;
+  }
+
+  .project-stack {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .project-links {
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .flip-btn {
+    margin-top: var(--spacing-md);
   }
 }
 
@@ -986,7 +1008,7 @@ select:focus,
   font-weight: var(--font-weight-bold);
   color: var(--primary);
   text-align: center;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-2xl);
 }
 
 .mobile-name span {
@@ -1018,7 +1040,7 @@ p {
   .mobile-carousel {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     margin: 0 -1.5rem;
