@@ -148,6 +148,7 @@ button {
 /* Section */
 .section {
   padding: var(--section-spacing) 0;
+  position: relative;
 }
 
 .section-title {
@@ -170,7 +171,7 @@ button {
   transition: var(--transition);
 }
 
-.section-title:hover::after {
+.section:hover .section-title::after {
   width: 100%;
 }
 
