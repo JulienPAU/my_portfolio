@@ -3,509 +3,945 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-fr="Portfolio Paulus Julien" data-en="Portfolio Julien Paulus">
-      Portfolio Paulus Julien
-    </title>
+    <meta
+      name="description"
+      content="Portfolio de Julien Paulus, développeur Fullstack Javascript"
+    />
+    <title>Portfolio Julien Paulus</title>
 
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/logofav.png" />
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/keyframes.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaQuerries.css" />
-    <link rel="stylesheet" href="css/dark_light.css" />
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Icônes -->
     <script
       src="https://kit.fontawesome.com/2018e2ad13.js"
       crossorigin="anonymous"
+      defer
     ></script>
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
     />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="body_container" id="dark_mode">
-    <header class="header_navbar shadow">
-      <nav class="navbar">
-        <div class="navbar_name">
-          <h1 class="navbar_title">
-            <div
-              class="navbar_title"
-              data-fr="Julien PAULUS"
-              data-en="Julien PAULUS"
+  <body>
+    <!-- Bouton de navigation mobile -->
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Menu</span>
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="primary-navigation" id="primary-navigation">
+          <div class="logo">
+            <h1>Julien <span>PAULUS</span></h1>
+            <p>Développeur Fullstack Javascript</p>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link">À propos</a></li>
+            <li><a href="#skills" class="nav-link">Compétences</a></li>
+            <li><a href="#projects" class="nav-link">Projets</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a
+              href="https://github.com/JulienPAU"
+              target="_blank"
+              aria-label="GitHub"
             >
-              Julien PAULUS
-            </div>
-            <span>
-              <span
-                data-fr="Développeur Fullstack Javascript"
-                data-en="Fullstack Javascript Developer"
-                >Développeur Fullstack Javascript</span
-              >
-              <i class="fa-brands fa-js" style="color: #000000"></i>
-            </span>
-          </h1>
-        </div>
-
-        <div class="nav_icon">
-          <a href="https://github.com/JulienPAU" target="_blank"
-            ><i class="fa-brands fa-github" style="color: #ffffff"></i
-          ></a>
-
-          <a href="https://www.linkedin.com/in/paulus--julien/" target="_blank">
-            <i class="fa-brands fa-linkedin" style="color: #ffffff"></i
-          ></a>
-
-          <i
-            class="fa-solid fa-moon"
-            id="darkModeIcon"
-            style="color: #ffffff"
-          ></i>
-          <i
-            class="fa-solid fa-sun"
-            id="lightModeIcon"
-            style="color: #ffffff; display: none"
-          ></i>
-
-          <span
-            id="translateToEnglish"
-            class="fi fi-gb"
-            style="cursor: pointer"
-          ></span>
-          <span
-            id="translateToFrench"
-            class="fi fi-fr"
-            style="cursor: pointer; display: none"
-          ></span>
-        </div>
-      </nav>
+              <i class="fa-brands fa-github" id="github-icon"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/paulus--julien/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin" id="linkedin-icon"></i>
+            </a>
+            <button id="theme-toggle" aria-label="Changer de thème">
+              <i class="fa-solid fa-moon" id="dark-icon"></i>
+              <i class="fa-solid fa-sun" id="light-icon"></i>
+            </button>
+            <button id="lang-toggle" aria-label="Changer de langue">
+              <span id="en-flag" class="fi fi-gb"></span>
+              <span id="fr-flag" class="fi fi-fr"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <section class="contenair_section-description">
-      <img
-        src="images/photo.jpg"
-        alt="ma_photo"
-        class="description-img slideInLeft slideInDown"
-      />
-      <div class="description_section slideInRight slideInUp">
-        <h2 data-fr="À mon propos" data-en="About me">
-          À mon propos
-          <i class="fa-regular fa-comment-dots" style="color: #000000"></i>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2
+              class="hero-title"
+              data-fr="Développeur Fullstack Javascript"
+              data-en="Fullstack Javascript Developer"
+            >
+              Développeur Fullstack Javascript
+            </h2>
+            <p
+              class="hero-description"
+              data-fr="Passionné par la création d'applications web modernes et performantes"
+              data-en="Passionate about creating modern and performant web applications"
+            >
+              Passionné par la création d'applications web modernes et
+              performantes
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+              <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <h1 class="mobile-name">Julien <span>PAULUS</span></h1>
+            <img src="images/photo.jpg" alt="Julien Paulus" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section-title" data-fr="À mon propos" data-en="About me">
+          À mon propos <i class="fa-regular fa-comment-dots"></i>
         </h2>
-        <p
-          data-fr=" Développeur web passionné par la tech, je vois chaque projet comme un
-          puzzle à résoudre. Mon truc ? Décortiquer les problèmes complexes et
-          imaginer des solutions web sur-mesure qui vont à l'essentiel."
-          data-en="Passionate web developer, I see each project as a puzzle to solve. My approach? Breaking down complex problems and crafting tailor-made web solutions that get straight to the point."
-        >
-          Développeur web passionné par la tech, je vois chaque projet comme un
-          puzzle à résoudre. Mon truc ? Décortiquer les problèmes complexes et
-          imaginer des solutions web sur-mesure qui vont à l'essentiel.
-        </p>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="images/keyboard.jpg" alt="Julien Paulus" loading="lazy" />
+          </div>
+          <div class="about-text">
+            <p
+              data-fr="Développeur web passionné par la tech, je vois chaque projet comme un puzzle à résoudre. Mon truc ? Décortiquer les problèmes complexes et imaginer des solutions web sur-mesure qui vont à l'essentiel."
+              data-en="Passionate web developer, I see each project as a puzzle to solve. My approach? Breaking down complex problems and crafting tailor-made web solutions that get straight to the point."
+            >
+              Développeur web passionné par la tech, je vois chaque projet comme
+              un puzzle à résoudre. Mon truc ? Décortiquer les problèmes
+              complexes et imaginer des solutions web sur-mesure qui vont à
+              l'essentiel.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section_contact">
-      <h2 data-fr="Contact" data-en="Contact" class="contact_title">
-        Contact <i class="fa-solid fa-address-card" style="color: #000000"></i>
-      </h2>
+    <!-- Compétences -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section-title" data-fr="Technologies" data-en="Technologies">
+          Technologies <i class="fa-solid fa-toolbox"></i>
+        </h2>
+        <div class="mobile-carousel skills-carousel">
+          <div class="skill-card">
+            <img
+              src="images/JavaScript_logo.svg.png"
+              alt="JavaScript"
+              loading="lazy"
+            />
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/ts_logo.png" alt="TypeScript" loading="lazy" />
+            <p>TypeScript</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/node.png" alt="Node.js" loading="lazy" />
+            <p>Node.js</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/express.png" alt="Express.js" loading="lazy" />
+            <p>Express.js</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/postgresql.png" alt="PostgreSQL" loading="lazy" />
+            <p>PostgreSQL</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/prisma.png" alt="TypeScript" loading="lazy" />
+            <p>Prisma</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/react.png" alt="React" loading="lazy" />
+            <p>React</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/nextjs.png" alt="Next.js" loading="lazy" />
+            <p>Next.js</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/svelte.png" alt="Svelte" loading="lazy" />
+            <p>Svelte</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/tailwind.png" alt="Tailwind CSS" loading="lazy" />
+            <p>Tailwind CSS</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/HTML5_logo.png" alt="HTML5" loading="lazy" />
+            <p>HTML5</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/css-logo.png" alt="CSS3" loading="lazy" />
+            <p>CSS3</p>
+          </div>
+        </div>
+        <div class="skills-grid desktop-only">
+          <div class="skill-card">
+            <img
+              src="images/JavaScript_logo.svg.png"
+              alt="JavaScript"
+              loading="lazy"
+            />
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/ts_logo.png" alt="TypeScript" loading="lazy" />
+            <p>TypeScript</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/node.png" alt="Node.js" loading="lazy" />
+            <p>Node.js</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/express.png" alt="Express.js" loading="lazy" />
+            <p>Express.js</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/postgresql.png" alt="PostgreSQL" loading="lazy" />
+            <p>PostgreSQL</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/prisma.png" alt="TypeScript" loading="lazy" />
+            <p>Prisma</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/react.png" alt="React" loading="lazy" />
+            <p>React</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/nextjs.png" alt="Next.js" loading="lazy" />
+            <p>Next.js</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/svelte.png" alt="Svelte" loading="lazy" />
+            <p>Svelte</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/tailwind.png" alt="Tailwind CSS" loading="lazy" />
+            <p>Tailwind CSS</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/HTML5_logo.png" alt="HTML5" loading="lazy" />
+            <p>HTML5</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/css-logo.png" alt="CSS3" loading="lazy" />
+            <p>CSS3</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <div class="contact-container">
-        <a href="pdf/CV_JPR.pdf" target="_blank">
-          <span class="contact-text" data-fr="CV :" data-en="CV :">CV : </span>
-          <i class="fa-regular fa-file-pdf" style="color: #ffffff"></i>
-        </a>
+    <!-- Projets -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section-title" data-fr="Projets" data-en="Projects">
+          Projets <i class="fa-solid fa-diagram-project"></i>
+        </h2>
+        <div class="mobile-carousel projects-carousel">
+          <!-- Projet 1 -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-card-front">
+                <h3 data-fr="Les Petits Cadrans" data-en="Les Petits Cadrans">
+                  Les Petits Cadrans
+                </h3>
+                <div class="project-image">
+                  <img
+                    src="images/petitscadrans.PNG"
+                    alt="Les Petits Cadrans"
+                    loading="lazy"
+                  />
+                </div>
+                <button class="flip-btn" aria-label="Voir les détails">
+                  Voir les détails
+                </button>
+              </div>
+              <div class="project-card-back">
+                <h3 data-fr="Stack du projet" data-en="Project Stack">
+                  Stack du projet
+                </h3>
+                <ul class="project-stack">
+                  <li
+                    data-fr="Framework : SvelteKit"
+                    data-en="Framework: SvelteKit"
+                  >
+                    Framework : SvelteKit
+                  </li>
+                  <li
+                    data-fr="Typage : TypeScript"
+                    data-en="Typing: TypeScript"
+                  >
+                    Typage : TypeScript
+                  </li>
+                  <li
+                    data-fr="Style : Tailwind CSS / DaisyUI"
+                    data-en="Styling: Tailwind CSS / DaisyUI"
+                  >
+                    Style : Tailwind CSS / DaisyUI
+                  </li>
+                  <li
+                    data-fr="Base de données : PostgreSQL avec Prisma"
+                    data-en="Database: PostgreSQL with Prisma"
+                  >
+                    Base de données : PostgreSQL avec Prisma
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="https://www.lespetitscadrans.com/"
+                    target="_blank"
+                    class="btn btn-sm"
+                    >Visiter le site</a
+                  >
+                </div>
+                <button class="flip-btn" aria-label="Retour">Retour</button>
+              </div>
+            </div>
+          </article>
 
-        <a href="mailto:julien.paulus@neuf.fr">
-          <span class="contact-text" data-fr="Email :" data-en="Email :"
-            >Email :</span
+          <!-- Projet 2 -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-card-front">
+                <h3 data-fr="Météo" data-en="Weather">Météo</h3>
+                <div class="project-image">
+                  <img
+                    src="images/meteo_app.png"
+                    alt="Application Météo"
+                    loading="lazy"
+                  />
+                </div>
+                <button class="flip-btn" aria-label="Voir les détails">
+                  Voir les détails
+                </button>
+              </div>
+              <div class="project-card-back">
+                <h3 data-fr="Stack du projet" data-en="Project Stack">
+                  Stack du projet
+                </h3>
+                <ul class="project-stack">
+                  <li
+                    data-fr="Framework : Next.js"
+                    data-en="Framework: Next.js"
+                  >
+                    Framework : Next.js
+                  </li>
+                  <li
+                    data-fr="Typage : TypeScript"
+                    data-en="Typing: TypeScript"
+                  >
+                    Typage : TypeScript
+                  </li>
+                  <li
+                    data-fr="Style : Tailwind CSS"
+                    data-en="Styling: Tailwind CSS"
+                  >
+                    Style : Tailwind CSS
+                  </li>
+                  <li
+                    data-fr="API : Openmeteo pour les données"
+                    data-en="API: Openmeteo for data"
+                  >
+                    API : Openmeteo pour les données
+                  </li>
+                  <li
+                    data-fr="API : Geocode pour la localisation"
+                    data-en="API: Geocode for location"
+                  >
+                    API : Geocode pour la localisation
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="https://meteo-ruby.vercel.app/"
+                    target="_blank"
+                    class="btn btn-sm"
+                    >Visiter le site</a
+                  >
+                </div>
+                <button class="flip-btn" aria-label="Retour">Retour</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 3 -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-card-front">
+                <h3 data-fr="Paw Connect" data-en="Paw Connect">Paw Connect</h3>
+                <div class="project-image">
+                  <img
+                    src="images/pawconnect.PNG"
+                    alt="Paw Connect"
+                    loading="lazy"
+                  />
+                </div>
+                <button class="flip-btn" aria-label="Voir les détails">
+                  Voir les détails
+                </button>
+              </div>
+              <div class="project-card-back">
+                <h3 data-fr="Stack du projet" data-en="Project Stack">
+                  Stack du projet
+                </h3>
+                <ul class="project-stack">
+                  <li
+                    data-fr="Framework : Next.js"
+                    data-en="Framework: Next.js"
+                  >
+                    Framework : Next.js
+                  </li>
+                  <li
+                    data-fr="Typage : TypeScript"
+                    data-en="Typing: TypeScript"
+                  >
+                    Typage : TypeScript
+                  </li>
+                  <li
+                    data-fr="Style : Tailwind CSS / DaisyUI"
+                    data-en="Styling: Tailwind CSS / DaisyUI"
+                  >
+                    Style : Tailwind CSS / DaisyUI
+                  </li>
+                  <li
+                    data-fr="API : Paw Connect (Node.js)"
+                    data-en="API: Paw Connect (Node.js)"
+                  >
+                    API : Paw Connect (Node.js)
+                  </li>
+                  <li
+                    data-fr="Base de données : PostgreSQL"
+                    data-en="Database: PostgreSQL"
+                  >
+                    Base de données : PostgreSQL
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="https://paw-connect-front-sigma.vercel.app/"
+                    target="_blank"
+                    class="btn btn-sm"
+                    >Visiter le site</a
+                  >
+                </div>
+                <button class="flip-btn" aria-label="Retour">Retour</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 4 -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-card-front">
+                <h3 data-fr="Portfolio" data-en="Portfolio">Portfolio</h3>
+                <div class="project-image">
+                  <img
+                    src="images/portfolio.png"
+                    alt="Portfolio"
+                    loading="lazy"
+                  />
+                </div>
+                <button class="flip-btn" aria-label="Voir les détails">
+                  Voir les détails
+                </button>
+              </div>
+              <div class="project-card-back">
+                <h3 data-fr="Stack du projet" data-en="Project Stack">
+                  Stack du projet
+                </h3>
+                <ul class="project-stack">
+                  <li
+                    data-fr="Langage : JavaScript"
+                    data-en="Language: JavaScript"
+                  >
+                    Langage : JavaScript
+                  </li>
+                  <li data-fr="Balisage : HTML" data-en="Markup: HTML">
+                    Balisage : HTML
+                  </li>
+                  <li data-fr="Style : CSS" data-en="Styling: CSS">
+                    Style : CSS
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/JulienPAU/my_portfolio"
+                    target="_blank"
+                    class="btn btn-sm"
+                    >Voir sur GitHub</a
+                  >
+                </div>
+                <button class="flip-btn" aria-label="Retour">Retour</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="projects-grid desktop-only">
+          <!-- Projet 1 -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-card-front">
+                <h3 data-fr="Les Petits Cadrans" data-en="Les Petits Cadrans">
+                  Les Petits Cadrans
+                </h3>
+                <div class="project-image">
+                  <img
+                    src="images/petitscadrans.PNG"
+                    alt="Les Petits Cadrans"
+                    loading="lazy"
+                  />
+                </div>
+                <button class="flip-btn" aria-label="Voir les détails">
+                  Voir les détails
+                </button>
+              </div>
+              <div class="project-card-back">
+                <h3 data-fr="Stack du projet" data-en="Project Stack">
+                  Stack du projet
+                </h3>
+                <ul class="project-stack">
+                  <li
+                    data-fr="Framework : SvelteKit"
+                    data-en="Framework: SvelteKit"
+                  >
+                    Framework : SvelteKit
+                  </li>
+                  <li
+                    data-fr="Typage : TypeScript"
+                    data-en="Typing: TypeScript"
+                  >
+                    Typage : TypeScript
+                  </li>
+                  <li
+                    data-fr="Style : Tailwind CSS / DaisyUI"
+                    data-en="Styling: Tailwind CSS / DaisyUI"
+                  >
+                    Style : Tailwind CSS / DaisyUI
+                  </li>
+                  <li
+                    data-fr="Base de données : PostgreSQL avec Prisma"
+                    data-en="Database: PostgreSQL with Prisma"
+                  >
+                    Base de données : PostgreSQL avec Prisma
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="https://www.lespetitscadrans.com/"
+                    target="_blank"
+                    class="btn btn-sm"
+                    >Visiter le site</a
+                  >
+                </div>
+                <button class="flip-btn" aria-label="Retour">Retour</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 2 -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-card-front">
+                <h3 data-fr="Météo" data-en="Weather">Météo</h3>
+                <div class="project-image">
+                  <img
+                    src="images/meteo_app.png"
+                    alt="Application Météo"
+                    loading="lazy"
+                  />
+                </div>
+                <button class="flip-btn" aria-label="Voir les détails">
+                  Voir les détails
+                </button>
+              </div>
+              <div class="project-card-back">
+                <h3 data-fr="Stack du projet" data-en="Project Stack">
+                  Stack du projet
+                </h3>
+                <ul class="project-stack">
+                  <li
+                    data-fr="Framework : Next.js"
+                    data-en="Framework: Next.js"
+                  >
+                    Framework : Next.js
+                  </li>
+                  <li
+                    data-fr="Typage : TypeScript"
+                    data-en="Typing: TypeScript"
+                  >
+                    Typage : TypeScript
+                  </li>
+                  <li
+                    data-fr="Style : Tailwind CSS"
+                    data-en="Styling: Tailwind CSS"
+                  >
+                    Style : Tailwind CSS
+                  </li>
+                  <li
+                    data-fr="API : Openmeteo pour les données"
+                    data-en="API: Openmeteo for data"
+                  >
+                    API : Openmeteo pour les données
+                  </li>
+                  <li
+                    data-fr="API : Geocode pour la localisation"
+                    data-en="API: Geocode for location"
+                  >
+                    API : Geocode pour la localisation
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="https://meteo-ruby.vercel.app/"
+                    target="_blank"
+                    class="btn btn-sm"
+                    >Visiter le site</a
+                  >
+                </div>
+                <button class="flip-btn" aria-label="Retour">Retour</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 3 -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-card-front">
+                <h3 data-fr="Paw Connect" data-en="Paw Connect">Paw Connect</h3>
+                <div class="project-image">
+                  <img
+                    src="images/pawconnect.PNG"
+                    alt="Paw Connect"
+                    loading="lazy"
+                  />
+                </div>
+                <button class="flip-btn" aria-label="Voir les détails">
+                  Voir les détails
+                </button>
+              </div>
+              <div class="project-card-back">
+                <h3 data-fr="Stack du projet" data-en="Project Stack">
+                  Stack du projet
+                </h3>
+                <ul class="project-stack">
+                  <li
+                    data-fr="Framework : Next.js"
+                    data-en="Framework: Next.js"
+                  >
+                    Framework : Next.js
+                  </li>
+                  <li
+                    data-fr="Typage : TypeScript"
+                    data-en="Typing: TypeScript"
+                  >
+                    Typage : TypeScript
+                  </li>
+                  <li
+                    data-fr="Style : Tailwind CSS / DaisyUI"
+                    data-en="Styling: Tailwind CSS / DaisyUI"
+                  >
+                    Style : Tailwind CSS / DaisyUI
+                  </li>
+                  <li
+                    data-fr="API : Paw Connect (Node.js)"
+                    data-en="API: Paw Connect (Node.js)"
+                  >
+                    API : Paw Connect (Node.js)
+                  </li>
+                  <li
+                    data-fr="Base de données : PostgreSQL"
+                    data-en="Database: PostgreSQL"
+                  >
+                    Base de données : PostgreSQL
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="https://paw-connect-front-sigma.vercel.app/"
+                    target="_blank"
+                    class="btn btn-sm"
+                    >Visiter le site</a
+                  >
+                </div>
+                <button class="flip-btn" aria-label="Retour">Retour</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 4 -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-card-front">
+                <h3 data-fr="Portfolio" data-en="Portfolio">Portfolio</h3>
+                <div class="project-image">
+                  <img
+                    src="images/portfolio.png"
+                    alt="Portfolio"
+                    loading="lazy"
+                  />
+                </div>
+                <button class="flip-btn" aria-label="Voir les détails">
+                  Voir les détails
+                </button>
+              </div>
+              <div class="project-card-back">
+                <h3 data-fr="Stack du projet" data-en="Project Stack">
+                  Stack du projet
+                </h3>
+                <ul class="project-stack">
+                  <li
+                    data-fr="Langage : JavaScript"
+                    data-en="Language: JavaScript"
+                  >
+                    Langage : JavaScript
+                  </li>
+                  <li data-fr="Balisage : HTML" data-en="Markup: HTML">
+                    Balisage : HTML
+                  </li>
+                  <li data-fr="Style : CSS" data-en="Styling: CSS">
+                    Style : CSS
+                  </li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/JulienPAU/my_portfolio"
+                    target="_blank"
+                    class="btn btn-sm"
+                    >Voir sur GitHub</a
+                  >
+                </div>
+                <button class="flip-btn" aria-label="Retour">Retour</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section-title" data-fr="Contact" data-en="Contact">
+          Contact <i class="fa-solid fa-address-card"></i>
+        </h2>
+        <div class="mobile-carousel contact-carousel">
+          <a href="pdf/CV_JPR.pdf" target="_blank" class="contact-link">
+            <i class="fa-regular fa-file-pdf"></i>
+            <span data-fr="Télécharger mon CV" data-en="Download my CV"
+              >Télécharger mon CV</span
+            >
+          </a>
+          <a href="mailto:julien.paulus@neuf.fr" class="contact-link">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-fr="M'envoyer un email" data-en="Send me an email"
+              >M'envoyer un email</span
+            >
+          </a>
+          <a
+            href="https://www.linkedin.com/in/paulus--julien/"
+            target="_blank"
+            class="contact-link"
           >
-          <i class="fa-solid fa-envelope" style="color: #ffffff"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/paulus--julien/" target="_blank">
-          <span class="contact-text" data-fr="Réseaux :" data-en="Networks :"
-            >Réseaux : </span
-          ><i class="fa-brands fa-linkedin" style="color: #ffffff"></i
-        ></a>
+            <i class="fa-brands fa-linkedin"></i>
+            <span
+              data-fr="Me contacter sur LinkedIn"
+              data-en="Contact me on LinkedIn"
+              >Me contacter sur LinkedIn</span
+            >
+          </a>
+          <a
+            href="https://github.com/JulienPAU"
+            target="_blank"
+            class="contact-link"
+          >
+            <i class="fa-brands fa-github"></i>
+            <span
+              data-fr="Voir mes projets sur GitHub"
+              data-en="See my projects on GitHub"
+              >Voir mes projets sur GitHub</span
+            >
+          </a>
+        </div>
+        <div class="contact-links desktop-only">
+          <a href="pdf/CV_JPR.pdf" target="_blank" class="contact-link">
+            <i class="fa-regular fa-file-pdf"></i>
+            <span data-fr="Télécharger mon CV" data-en="Download my CV"
+              >Télécharger mon CV</span
+            >
+          </a>
+          <a href="mailto:julien.paulus@neuf.fr" class="contact-link">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-fr="M'envoyer un email" data-en="Send me an email"
+              >M'envoyer un email</span
+            >
+          </a>
+          <a
+            href="https://www.linkedin.com/in/paulus--julien/"
+            target="_blank"
+            class="contact-link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            <span
+              data-fr="Me contacter sur LinkedIn"
+              data-en="Contact me on LinkedIn"
+              >Me contacter sur LinkedIn</span
+            >
+          </a>
+          <a
+            href="https://github.com/JulienPAU"
+            target="_blank"
+            class="contact-link"
+          >
+            <i class="fa-brands fa-github"></i>
+            <span
+              data-fr="Voir mes projets sur GitHub"
+              data-en="See my projects on GitHub"
+              >Voir mes projets sur GitHub</span
+            >
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="section_tech">
-      <h2 data-fr="Technologies" data-en="Technologies" class="tech_title">
-        Technologies <i class="fa-solid fa-toolbox" style="color: #000000"></i>
-      </h2>
-
-      <div class="tech_img-container">
-        <img class="bounce" src="images/JavaScript_logo.svg.png" alt="" />
-
-        <img class="bounce logo_border" src="images/ts_logo.png" alt="" />
-
-        <img class="bounce" src="images/node.png" alt="node_img" />
-
-        <img class="bounce" src="images/express.png" alt="express_img" />
-
-        <img class="bounce" src="images/postgresql.png" alt="PostgreSQL_img" />
-
-        <img class="bounce" src="images/react.png" alt="react_img" />
-
-        <img
-          class="bounce logo_border"
-          src="images/nextjs.png"
-          alt="next_img"
-        />
-
-        <img class="bounce" src="images/svelte.png" alt="svelte_img" />
-
-        <img class="bounce" src="images/tailwind.png" alt="tailwind_img" />
-
-        <img class="bounce" src="images/HTML5_logo.png" alt="HTML5_img" />
-
-        <img class="bounce" src="images/css-logo.png" alt="CSS_img" />
+    <!-- Musique -->
+    <section class="music section" id="music">
+      <div class="container">
+        <h2
+          class="section-title"
+          data-fr="Musique d'ambiance"
+          data-en="Background Music"
+        >
+          Musique d'ambiance <i class="fa-solid fa-music"></i>
+        </h2>
+        <div class="music-links">
+          <a
+            href="https://www.deezer.com/en/playlist/6399367984"
+            target="_blank"
+            aria-label="Playlist Deezer 1"
+            class="music-link"
+          >
+            <i class="fa-brands fa-deezer"></i>
+          </a>
+          <a
+            href="https://www.deezer.com/fr/playlist/7065988424"
+            target="_blank"
+            aria-label="Playlist Deezer 2"
+            class="music-link"
+          >
+            <i class="fa-brands fa-deezer"></i>
+          </a>
+          <a
+            href="https://open.spotify.com/user/chilledcow"
+            target="_blank"
+            aria-label="Profil Spotify Chilled Cow"
+            class="music-link"
+          >
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+          <a
+            href="https://open.spotify.com/intl-fr/track/2VbPrfnaQ7idKYZEqEtFrC"
+            target="_blank"
+            aria-label="Morceau Spotify"
+            class="music-link"
+          >
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=g6LhK0wTemE&ab_channel=LofiGirl"
+            target="_blank"
+            aria-label="Vidéo YouTube Lofi Girl"
+            class="music-link"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=dusfmL_bm1o&ab_channel=LO-FISENPAI"
+            target="_blank"
+            aria-label="Vidéo YouTube LO-FI SENPAI"
+            class="music-link"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="section_projet">
-      <h2 data-fr="Projets" data-en="Projects">
-        Projets
-        <i class="fa-solid fa-diagram-project" style="color: #000000"></i>
-      </h2>
-
-      <div class="article_article">
-        <article class="article_project card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3 data-fr="Les Petits Cadrans" data-en="Les Petits Cadrans">
-                Les Petits Cadrans
-              </h3>
-              <a href="https://www.lespetitscadrans.com/" target="_blank"
-                ><img
-                  class="article_img"
-                  src="images/petitscadrans.PNG"
-                  alt="image_lespetitscadrans"
-                />
-              </a>
-              <button
-                class="flip-button"
-                data-fr="Voir les détails"
-                data-en="See details"
-              >
-                Voir les détails
-              </button>
-            </div>
-            <div class="card-back">
-              <h3 data-fr="Stack du projet" data-en="Project Stack">
-                Stack du projet
-              </h3>
-
-              <p
-                data-fr="Le Framework : SvelteKit"
-                data-en="Framework: SvelteKit"
-              >
-                Le Framework : SvelteKit
-              </p>
-              <p data-fr="Le typage : Typescript" data-en="Typing: Typescript">
-                Le typage : Typescript
-              </p>
-              <p
-                data-fr="Le style : Tailwind CSS / DaisyUI"
-                data-en="Styling: Tailwind CSS / DaisyUI"
-              >
-                Le style : Tailwind CSS / DaisyUI
-              </p>
-
-              <p
-                data-fr="Création de la base de donnée, du backend et du frontend"
-                data-en="Creation of the database, backend and frontend"
-              >
-                Création de la base de donnée, du backend et du frontend
-              </p>
-              <p
-                data-fr="PostgreSQL pour la base de données associée à Prisma"
-                data-en="PostgreSQL for the database associated with Prisma"
-              >
-                PostgreSQL pour la base de données associée à Prisma
-              </p>
-
-              <a href="https://www.lespetitscadrans.com/" target="_blank">
-                <p
-                  class="project-link"
-                  data-fr="Visiter le site"
-                  data-en="Visit the site"
-                >
-                  Visiter le site
-                </p>
-              </a>
-            </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="images/logofav.png" alt="Logo" loading="lazy" />
           </div>
-        </article>
-
-        <article class="article_project card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3 data-fr="Météo" data-en="Weather">Météo</h3>
-              <a href="https://meteo-ruby.vercel.app/" target="_blank">
-                <img
-                  class="article_img"
-                  src="images/meteo_app.png"
-                  alt="image_meteo_app"
-                />
-              </a>
-              <button
-                class="flip-button"
-                data-fr="Voir les détails"
-                data-en="See details"
-              >
-                Voir les détails
-              </button>
-            </div>
-            <div class="card-back">
-              <h3 data-fr="Stack du projet" data-en="Project Stack">
-                Stack du projet
-              </h3>
-
-              <p data-fr="Le Framework : NextJS" data-en="Framework: NextJS">
-                Le Framework : NextJS
-              </p>
-              <p data-fr="Le typage : Typescript" data-en="Typing: Typescript">
-                Le typage : Typescript
-              </p>
-              <p
-                data-fr="Le style : Tailwind CSS"
-                data-en="Styling: Tailwind CSS"
-              >
-                Le style : Tailwind CSS
-              </p>
-
-              <p
-                data-fr="API Openmeteo pour les données"
-                data-en="Openmeteo API for data"
-              >
-                API Openmeteo pour les données
-              </p>
-              <p
-                data-fr="API Geocode pour la localisation"
-                data-en="Geocode API for location"
-              >
-                API Geocode pour la localisation
-              </p>
-
-              <a href="https://meteo-ruby.vercel.app/" target="_blank">
-                <p
-                  class="project-link"
-                  data-fr="Visiter le site"
-                  data-en="Visit the site"
-                >
-                  Visiter le site
-                </p>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="article_project card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3 data-fr="Paw Connect" data-en="Paw Connect">Paw Connect</h3>
-
-              <a
-                href="https://paw-connect-front-sigma.vercel.app/"
-                target="_blank"
-                ><img
-                  class="article_img"
-                  src="images/pawconnect.PNG"
-                  alt="image_ocoffee"
-              /></a>
-              <button
-                class="flip-button"
-                data-fr="Voir les détails"
-                data-en="See details"
-              >
-                Voir les détails
-              </button>
-            </div>
-
-            <div class="card-back">
-              <h3 data-fr="Stack du projet" data-en="Project Stack">
-                Stack du projet
-              </h3>
-
-              <p data-fr="Le Framework : NextJS" data-en="Framework: NextJS">
-                Le Framework : NextJS
-              </p>
-              <p data-fr="Le typage : Typescript" data-en="Typing: Typescript">
-                Le typage : Typescript
-              </p>
-              <p
-                data-fr="Le style : Tailwind CSS / DaisyUI"
-                data-en="Styling: Tailwind CSS / DaisyUI"
-              >
-                Le style : Tailwind CSS / DaisyUI
-              </p>
-
-              <p
-                data-fr="API Paw Connect construite avec NodeJS"
-                data-en="Paw Connect API built with NodeJS"
-              >
-                API Paw Connect construite avec NodeJS
-              </p>
-              <p
-                data-fr="PostgreSQL pour la base de données"
-                data-en="PostgreSQL for the database"
-              >
-                PostgreSQL pour la base de données
-              </p>
-
-              <a
-                href="https://paw-connect-front-sigma.vercel.app/"
-                target="_blank"
-              >
-                <p
-                  class="project-link"
-                  data-fr="Visiter le site"
-                  data-en="Visit the site"
-                >
-                  Visiter le site
-                </p>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="article_project card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h3 data-fr="Portfolio" data-en="Portfolio">Portfolio</h3>
-              <a
-                href="https://github.com/JulienPAU/my_portfolio"
-                target="_blank"
-                ><img
-                  class="article_img"
-                  src="images/portfolio.png"
-                  alt="image_paw-connect"
-              /></a>
-              <button
-                class="flip-button"
-                data-fr="Voir les détails"
-                data-en="See details"
-              >
-                Voir les détails
-              </button>
-            </div>
-
-            <div class="card-back">
-              <h3 data-fr="Stack du projet" data-en="Project Stack">
-                Stack du projet
-              </h3>
-
-              <p data-fr="Langage : Javascript" data-en="Language: Javascript">
-                Langage : Javascript
-              </p>
-              <p data-fr="Le balisage : HTML" data-en="Markup: HTML">
-                Le balisage : HTML
-              </p>
-              <p data-fr="Le style : CSS" data-en="Styling: CSS">
-                Le style : CSS
-              </p>
-
-              <a
-                href="https://github.com/JulienPAU/my_portfolio"
-                target="_blank"
-              >
-                <p
-                  class="project-link"
-                  data-fr="Visiter le Github"
-                  data-en="Visit the Github"
-                >
-                  Visiter le Github
-                </p>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="music_container">
-      <h2
-        class="music_container-title"
-        data-fr="Musique d'ambiance"
-        data-en="Background Music"
-      >
-        Musique d'ambiance<i
-          class="fa-solid fa-music"
-          style="color: #000000"
-        ></i>
-      </h2>
-
-      <div class="music_links">
-        <a href="https://www.deezer.com/en/playlist/6399367984" target="_blank"
-          ><i class="fa-brands fa-deezer" style="color: #ffffff"></i
-        ></a>
-
-        <a href="https://www.deezer.com/fr/playlist/7065988424" target="_blank"
-          ><i class="fa-brands fa-deezer" style="color: #ffffff"></i
-        ></a>
-
-        <a href="https://open.spotify.com/user/chilledcow" target="_blank"
-          ><i class="fa-brands fa-spotify" style="color: #ffffff"></i
-        ></a>
-
-        <a
-          href="https://open.spotify.com/intl-fr/track/2VbPrfnaQ7idKYZEqEtFrC"
-          target="_blank"
-          ><i class="fa-brands fa-spotify" style="color: #ffffff"></i
-        ></a>
-
-        <a
-          href="https://www.youtube.com/watch?v=g6LhK0wTemE&ab_channel=LofiGirl"
-          target="_blank"
-          ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
-        ></a>
-
-        <a
-          href="https://www.youtube.com/watch?v=dusfmL_bm1o&ab_channel=LO-FISENPAI"
-          target="_blank"
-          ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
-        ></a>
-      </div>
-    </section>
-
-    <footer class="footer_navbar">
-      <nav class="navbar footer_nav">
-        <div class="footer_name">
-          <h1
-            class="footer_title"
+          <p
+            class="copyright"
             data-fr="&copy; Julien Paulus 2024"
             data-en="&copy; Julien Paulus 2024"
           >
             &copy; Julien Paulus 2024
-          </h1>
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://github.com/JulienPAU"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/paulus--julien/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:julien.paulus@neuf.fr" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
         </div>
-
-        <img class="footer_img" src="images/logofav.png" alt="" />
-
-        <div class="nav_icon">
-          <a href="https://github.com/JulienPAU" target="_blank"
-            ><i class="fa-brands fa-github" style="color: #ffffff"></i
-          ></a>
-
-          <a href="https://www.linkedin.com/in/paulus--julien/" target="_blank">
-            <i class="fa-brands fa-linkedin" style="color: #ffffff"></i
-          ></a>
-
-          <a href="mailto:julien.paulus@neuf.fr">
-            <i class="fa-solid fa-envelope" style="color: #ffffff"></i>
-          </a>
-
-          <a href="pdf/CV_JPR.pdf" target="_blank"
-            ><i class="fa-regular fa-file-pdf" style="color: #ffffff"></i
-          ></a>
-        </div>
-      </nav>
+      </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <!-- Bouton retour en haut -->
+    <button id="back-to-top" aria-label="Retour en haut">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
   </body>
 </html>
