@@ -44,28 +44,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
 
   // Appliquer le thème sauvegardé ou celui préféré par l'utilisateur
-  if (savedTheme === "dark" || (!savedTheme && prefersDarkMode)) {
-    enableDarkMode();
-  } else {
+  if (savedTheme === "light") {
     enableLightMode();
+  } else if (savedTheme === "dark" || (!savedTheme && prefersDarkMode)) {
+    enableDarkMode();
   }
 
   function enableDarkMode() {
-    body.classList.add("dark-mode");
+    body.classList.remove("light-mode");
     localStorage.setItem("theme", "dark");
   }
 
   function enableLightMode() {
-    body.classList.remove("dark-mode");
+    body.classList.add("light-mode");
     localStorage.setItem("theme", "light");
   }
 
   if (themeToggle) {
     themeToggle.addEventListener("click", () => {
-      if (body.classList.contains("dark-mode")) {
-        enableLightMode();
-      } else {
+      if (body.classList.contains("light-mode")) {
         enableDarkMode();
+      } else {
+        enableLightMode();
       }
     });
   }
@@ -196,18 +196,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.body.classList.add("loaded");
 
-  // Gestion des carousels mobiles
   const carousels = document.querySelectorAll(".mobile-carousel");
 
-  // Ajouter des indicateurs de défilement pour les carousels
   function addScrollIndicators() {
     if (window.innerWidth <= 768) {
       for (const carousel of carousels) {
-        // Vérifier si le carousel a besoin d'un indicateur de défilement
         const scrollWidth = carousel.scrollWidth;
         const clientWidth = carousel.clientWidth;
 
-        // Si le contenu est plus large que le conteneur, ajouter un indicateur
         if (scrollWidth > clientWidth) {
           carousel.closest(".section").classList.add("has-carousel");
         } else {
@@ -217,9 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Améliorer le défilement des carousels
   for (const carousel of carousels) {
-    // Événements tactiles pour un défilement plus fluide
     let startX;
     let scrollLeft;
 
@@ -251,7 +245,6 @@ document.addEventListener("DOMContentLoaded", () => {
       { passive: true }
     );
 
-    // Ajouter le support pour la souris (drag)
     let isDown = false;
 
     carousel.addEventListener("mousedown", (e) => {
@@ -280,7 +273,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Appeler la fonction au chargement et au redimensionnement
   addScrollIndicators();
   window.addEventListener("resize", addScrollIndicators);
 });
