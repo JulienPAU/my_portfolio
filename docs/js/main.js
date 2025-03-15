@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
       (e) => {
         if (!startX) return;
         const x = e.touches[0].pageX - carousel.offsetLeft;
-        const walk = (x - startX) * 1.5; // Vitesse de défilement
+        const walk = (x - startX) * 5; // Vitesse de défilement
         carousel.scrollLeft = scrollLeft - walk;
       },
       { passive: true }
