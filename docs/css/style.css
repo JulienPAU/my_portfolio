@@ -150,6 +150,26 @@ button {
   padding: var(--section-spacing) 0;
   position: relative;
 }
+.hero {
+  background-color: var(--bg-card);
+}
+
+.section:nth-of-type(even) {
+  background-color: var(--bg-light);
+}
+
+.section:nth-of-type(odd) {
+  background-color: var(--bg-card);
+}
+
+.about,
+.soft-skills,
+.skills,
+.projects,
+.music,
+.contact {
+  background-color: unset;
+}
 
 .section-title {
   font-size: var(--font-size-2xl);
@@ -372,7 +392,6 @@ button {
 /* Hero Section */
 .hero {
   padding: var(--spacing-3xl) 0;
-  background-color: var(--bg-light);
 }
 
 .hero-content {
@@ -395,7 +414,7 @@ button {
 .hero-description {
   font-size: var(--font-size-lg);
   margin-bottom: var(--spacing-xl);
-  color: var(--text-muted);
+  color: var(--text-dark);
 }
 
 .hero-cta {
@@ -415,9 +434,6 @@ button {
 }
 
 /* À propos */
-.about {
-  background-color: var(--bg-card);
-}
 
 .about-content {
   display: flex;
@@ -445,9 +461,6 @@ button {
 }
 
 /* Compétences */
-.soft-skills {
-  background-color: var(--bg-dark);
-}
 
 .soft-skills .skills-grid {
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -455,6 +468,7 @@ button {
 
 .soft-skills .skill-card {
   min-height: 160px;
+  background-color: var(--bg-light);
 }
 
 .soft-skill-icon {
@@ -513,9 +527,6 @@ button {
 }
 
 /* Projets */
-.projects {
-  background-color: var(--bg-card);
-}
 
 .projects-grid {
   display: grid;
@@ -662,9 +673,6 @@ button {
 }
 
 /* Musique */
-.music {
-  background-color: var(--bg-card);
-}
 
 .music-links {
   display: flex;
