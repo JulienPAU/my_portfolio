@@ -445,6 +445,36 @@ button {
 }
 
 /* Compétences */
+.soft-skills {
+  background-color: var(--bg-dark);
+}
+
+.soft-skills .skills-grid {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.soft-skills .skill-card {
+  min-height: 160px;
+}
+
+.soft-skill-icon {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: var(--spacing-md);
+  transition: var(--transition);
+}
+
+.skill-card:hover .soft-skill-icon {
+  color: var(--secondary);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .soft-skills .skills-carousel .skill-card {
+    flex: 0 0 180px;
+  }
+}
+/* Technologies */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -479,6 +509,7 @@ button {
 
 .skill-card p {
   font-weight: var(--font-weight-medium);
+  text-align: center;
 }
 
 /* Projets */
@@ -592,11 +623,6 @@ button {
   transform: translateY(-2px);
 }
 
-/* Contact */
-.contact {
-  text-align: center;
-}
-
 .contact-links {
   display: flex;
   flex-wrap: wrap;
@@ -632,12 +658,12 @@ button {
 
 .contact-link span {
   font-weight: var(--font-weight-medium);
+  text-align: center;
 }
 
 /* Musique */
 .music {
   background-color: var(--bg-card);
-  text-align: center;
 }
 
 .music-links {
@@ -766,11 +792,6 @@ select:focus,
     order: -1;
   }
 
-  .section-title::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   .skills-grid {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
@@ -828,17 +849,14 @@ select:focus,
     gap: var(--spacing-lg);
   }
 
-  /* Afficher le nom en mobile */
   .mobile-name {
     display: block;
   }
 
-  /* Cacher les éléments desktop en mobile */
   .desktop-only {
     display: none !important;
   }
 
-  /* Carousel pour mobile - style général */
   .mobile-carousel {
     display: flex;
     overflow-x: auto;
@@ -910,7 +928,6 @@ select:focus,
     }
   }
 
-  /* Ajustements pour les cartes de projet en mobile */
   .project-card-back {
     overflow-y: auto;
   }
@@ -994,7 +1011,6 @@ select:focus,
   animation: fadeIn 0.8s ease forwards;
 }
 
-/* Préférences de réduction de mouvement */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1006,7 +1022,6 @@ select:focus,
   }
 }
 
-/* Nom en mobile */
 .mobile-name {
   display: none;
   font-size: var(--font-size-2xl);
@@ -1020,36 +1035,32 @@ select:focus,
   color: var(--secondary);
 }
 
-/* Texte justifié */
 p {
   text-align: justify;
 }
 
-/* Carousel mobile */
 .mobile-carousel {
   display: none;
 }
 
 @media (max-width: 768px) {
-  /* Afficher le nom en mobile */
   .mobile-name {
     display: block;
   }
 
-  /* Cacher les éléments desktop en mobile */
   .desktop-only {
     display: none !important;
   }
 
-  /* Carousel pour mobile */
   .mobile-carousel {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     margin: 0 -1.5rem;
     padding: 0 1.5rem;
+    gap: 1rem;
   }
 
   .mobile-carousel::-webkit-scrollbar {
@@ -1058,11 +1069,7 @@ p {
 
   .mobile-carousel-item {
     flex: 0 0 100%;
-    scroll-snap-align: start;
-    padding-right: 1.5rem;
-  }
-
-  .mobile-carousel-item:last-child {
+    scroll-snap-align: center;
     padding-right: 0;
   }
 
@@ -1086,12 +1093,10 @@ p {
     transform: scale(1.2);
   }
 
-  /* Cacher les sections normales en mobile */
   .mobile-hide {
     display: none;
   }
 
-  /* Ajustements pour le carousel */
   .skills-grid,
   .projects-grid,
   .contact-links {

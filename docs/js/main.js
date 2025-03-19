@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const backToTopButton = document.getElementById("back-to-top");
   const flipButtons = document.querySelectorAll(".flip-btn");
   const sections = document.querySelectorAll("section");
+  const softSkillCards = document.querySelectorAll(".soft-skill-card");
 
   if (mobileNavToggle) {
     mobileNavToggle.addEventListener("click", () => {
@@ -115,6 +116,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  softSkillCards.forEach((card) => {
+    card.addEventListener("click", function () {
+      const inner = this.querySelector(".soft-skill-card-inner");
+      inner.classList.toggle("is-flipped");
+    });
+  });
+
   window.addEventListener("scroll", () => {
     if (window.scrollY > 500) {
       backToTopButton.classList.add("visible");
@@ -212,67 +220,41 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-
   for (const carousel of carousels) {
-    let startX;
-    let scrollLeft;
-
+    // Ajouter la détection de fin de défilement
     carousel.addEventListener(
-      "touchstart",
-      (e) => {
-        startX = e.touches[0].pageX - carousel.offsetLeft;
-        scrollLeft = carousel.scrollLeft;
+      "scroll",
+      function () {
+        // Petite fonction pour débounce le scroll
+        if (carousel.scrollTimeout) {
+          clearTimeout(carousel.scrollTimeout);
+        }
+
+        carousel.scrollTimeout = setTimeout(() => {
+          // Vérifier qu'il y a des éléments dans le carousel
+          const firstItem = carousel.querySelector(".mobile-carousel-item");
+          if (!firstItem) return;
+
+          // Calculer l'élément le plus visible
+          const scrollPosition = carousel.scrollLeft;
+          const itemWidth = firstItem.offsetWidth;
+          if (itemWidth === 0) return; // Protection supplémentaire
+
+          const currentIndex = Math.round(scrollPosition / itemWidth);
+
+          // Mise à jour des dots si présents
+          const parentSection = carousel.closest(".section");
+          if (parentSection) {
+            const dots = parentSection.querySelectorAll(".mobile-carousel-dot");
+            if (dots.length > 0) {
+              dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === currentIndex);
+              });
+            }
+          }
+        }, 150);
       },
       { passive: true }
     );
-
-    carousel.addEventListener(
-      "touchmove",
-      (e) => {
-        if (!startX) return;
-        const x = e.touches[0].pageX - carousel.offsetLeft;
-        const walk = (x - startX) * 5; // Vitesse de défilement
-        carousel.scrollLeft = scrollLeft - walk;
-      },
-      { passive: true }
-    );
-
-    carousel.addEventListener(
-      "touchend",
-      () => {
-        startX = null;
-      },
-      { passive: true }
-    );
-
-    let isDown = false;
-
-    carousel.addEventListener("mousedown", (e) => {
-      isDown = true;
-      carousel.classList.add("grabbing");
-      startX = e.pageX - carousel.offsetLeft;
-      scrollLeft = carousel.scrollLeft;
-    });
-
-    carousel.addEventListener("mouseleave", () => {
-      isDown = false;
-      carousel.classList.remove("grabbing");
-    });
-
-    carousel.addEventListener("mouseup", () => {
-      isDown = false;
-      carousel.classList.remove("grabbing");
-    });
-
-    carousel.addEventListener("mousemove", (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - carousel.offsetLeft;
-      const walk = (x - startX) * 1.5;
-      carousel.scrollLeft = scrollLeft - walk;
-    });
   }
-
-  addScrollIndicators();
-  window.addEventListener("resize", addScrollIndicators);
 });
