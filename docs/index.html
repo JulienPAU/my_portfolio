@@ -74,12 +74,8 @@
               >
             </li>
             <li>
-              <a
-                href="#skills"
-                class="nav-link"
-                data-fr="Technologies"
-                data-en="Technologies"
-                >Technologies</a
+              <a href="#skills" class="nav-link" data-fr="Tech" data-en="Tech"
+                >Tech</a
               >
             </li>
 
@@ -90,6 +86,16 @@
                 data-fr="Projets"
                 data-en="Projects"
                 >Projets</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/julienpaulusdev/30min'});return false;"
+                class="nav-link"
+                data-fr="Rendez-vous"
+                data-en="Meeting"
+                >Rendez-vous</a
               >
             </li>
           </ul>
@@ -308,8 +314,8 @@
     <!-- Technologies -->
     <section class="skills section" id="skills">
       <div class="container">
-        <h2 class="section-title" data-fr="Technologies" data-en="Technologies">
-          Technologies <i class="fa-solid fa-toolbox"></i>
+        <h2 class="section-title" data-fr="Tech" data-en="Tech">
+          Tech <i class="fa-solid fa-toolbox"></i>
         </h2>
         <div class="mobile-carousel skills-carousel">
           <div class="skill-card">
@@ -1098,10 +1104,24 @@
           Contact <i class="fa-solid fa-address-card"></i>
         </h2>
         <div class="mobile-carousel contact-carousel">
-          <a href="pdf/CV_JPR.pdf" target="_blank" class="contact-link">
+          <a
+            href="pdf/CV_Julien_Paulus.pdf"
+            target="_blank"
+            class="contact-link"
+          >
             <i class="fa-regular fa-file-pdf"></i>
             <span data-fr="Télécharger mon CV" data-en="Download my CV"
               >Télécharger mon CV</span
+            >
+          </a>
+          <a
+            href="javascript:void(0)"
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/julienpaulusdev/30min'});return false;"
+            class="contact-link"
+          >
+            <i class="fa-solid fa-calendar-check"></i>
+            <span data-fr="Prendre rendez-vous" data-en="Schedule a meeting"
+              >Prendre rendez-vous</span
             >
           </a>
           <a href="mailto:julien.paulus@neuf.fr" class="contact-link">
@@ -1136,10 +1156,24 @@
           </a>
         </div>
         <div class="contact-links desktop-only">
-          <a href="pdf/CV_JPR.pdf" target="_blank" class="contact-link">
+          <a
+            href="pdf/CV_Julien_Paulus.pdf"
+            target="_blank"
+            class="contact-link"
+          >
             <i class="fa-regular fa-file-pdf"></i>
             <span data-fr="Télécharger mon CV" data-en="Download my CV"
               >Télécharger mon CV</span
+            >
+          </a>
+          <a
+            href="javascript:void(0)"
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/julienpaulusdev/30min'});return false;"
+            class="contact-link"
+          >
+            <i class="fa-solid fa-calendar-check"></i>
+            <span data-fr="Prendre rendez-vous" data-en="Schedule a meeting"
+              >Prendre rendez-vous</span
             >
           </a>
           <a href="mailto:julien.paulus@neuf.fr" class="contact-link">
@@ -1283,5 +1317,14 @@
 
     <!-- Scripts -->
     <script src="js/main.js" defer></script>
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
   </body>
 </html>

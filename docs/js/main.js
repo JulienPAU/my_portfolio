@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+  if (typeof Calendly === "undefined") {
+    console.error("Calendly n'est pas chargé");
+  }
+
   const body = document.body;
   const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
   const primaryNavigation = document.getElementById("primary-navigation");
